@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <handler_configuration>
     <deep_handler_configuration>
-        <components_repository_url_reference>http://192.168.214.128/DEEalerProvider/COMPONENTS/controllets/</components_repository_url_reference>
+        <components_repository_url_reference>http://192.168.232.128/DEEalerProvider/COMPONENTS/controllets/</components_repository_url_reference>
     </deep_handler_configuration>
     <components>
         <component>
