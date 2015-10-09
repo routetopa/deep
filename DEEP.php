@@ -11,6 +11,9 @@ error_reporting(-1);
 
 require 'Slim/Slim.php';
 
+/**
+ * Class DEEP
+ */
 class DEEP {
     private static $instance = null;
     private $app;
@@ -55,6 +58,10 @@ class DEEP {
         });
     }
 
+    /**
+     * @param $source
+     * @return array
+     */
     public function loadServices($source){
         $components_array = array();
         $handler_configuration = simplexml_load_file($source) or die("ERROR: cant read Components configuration \n");
