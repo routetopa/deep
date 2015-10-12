@@ -27,7 +27,6 @@
 /**
  * Developed by :
  * ROUTE-TO-PA Project - grant No 645860. - www.routetopa.eu
-
  */
 
 ini_set('display_errors',1);
@@ -45,6 +44,9 @@ class DEEP {
     private $all_datalets;
     private $all_controllets;
 
+    private $controllet_repository_url;
+    private $datalet_repository_url;
+
     public static function getInstance()
     {
         if(self::$instance == null)
@@ -61,7 +63,9 @@ class DEEP {
         \Slim\Slim::registerAutoloader();
         $this->app = new \Slim\Slim();
 
-        $this->all_datalets = $this->loadServices("datalets.xml");
+        $this->loadRepositoryUrl("configuration.xml");
+
+        $this->all_datalets = $this->loadServices("datalets.xml", $this->datalet_repository_url);
         $this->app->get('/datalets-list', function(){
             $this->app->response()->header("Content-Type", "application/json");
             $this->app->response()->header("Access-Control-Allow-Origin", "*");
@@ -69,7 +73,7 @@ class DEEP {
 
         });
 
-        $this->all_controllets = $this->loadServices("controllets.xml");
+        $this->all_controllets = $this->loadServices("controllets.xml", $this->controllet_repository_url);
         $this->app->get('/controllets-list', function(){
             $this->app->response()->header("Content-Type", "application/json");
             $this->app->response()->header("Access-Control-Allow-Origin", "*");
@@ -83,23 +87,29 @@ class DEEP {
         });
     }
 
+    public function loadRepositoryUrl($source)
+    {
+        $handler_configuration = simplexml_load_file($source) or die("ERROR: cant read Components configuration \n");
+        $this->datalet_repository_url = $handler_configuration->deep_datalet_configuration->components_repository_url_reference;
+        $this->controllet_repository_url = $handler_configuration->deep_controllets_configuration->components_repository_url_reference;
+    }
+
     /**
      * @param $source
      * @return array
      */
-    public function loadServices($source){
+    public function loadServices($source, $repository_url){
         $components_array = array();
         $handler_configuration = simplexml_load_file($source) or die("ERROR: cant read Components configuration \n");
-        $deep_configuration  = $handler_configuration->deep_handler_configuration;
 
         foreach($handler_configuration->components->children() as $component){
             //array_push($components_array, $component->name."");
-            $component->url = $handler_configuration->deep_handler_configuration->components_repository_url_reference . $component->name . "/";
+            $component->url = $repository_url . $component->name . "/";
             array_push($components_array, $component);
-            $this->app->get('/'.$component->name, function() use($component, $deep_configuration ){
+            $this->app->get('/'.$component->name, function() use($component, $repository_url){
                 $response = array(
                     "name"           => $component->name."",
-                    "bridge_link"    => $deep_configuration->components_repository_url_reference."",
+                    "bridge_link"    => $repository_url."",
                     "component_link" => $component->name."/".$component->name.".html",
                     "idm"            => $component->idm
                 );
@@ -126,4 +136,3 @@ class DEEP {
 
 
 }
-?>
