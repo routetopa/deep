@@ -11,7 +11,7 @@
                    <name>data-url</name>
                </attribute>
                <attribute>
-                   <name>query</name>
+                   <name>fields</name>
                </attribute>
            </attributes>
            <idm>
@@ -25,7 +25,6 @@
                    </input>
                    <layouts>
                        <input>
-                           <name>x-axis-label</name>
                        </input>
                    </layouts>
                </inputs>
@@ -38,7 +37,7 @@
                     <name>data-url</name>
                 </attribute>
                 <attribute>
-                    <name>query</name>
+                    <name>fields</name>
                 </attribute>
             </attributes>
             <idm>
@@ -59,7 +58,20 @@
                     </input>
                     <layouts>
                         <input>
+                            <name>title</name>
+                            <description>The label for the title of the chart</description>
+                        </input>
+                        <input>
                             <name>x-axis-label</name>
+                            <description>The label for the X axis</description>
+                        </input>
+                        <input>
+                            <name>y-axis-label</name>
+                            <description>The label for the Y axis</description>
+                        </input>
+                        <input>
+                            <name>suffix</name>
+                            <description>The values suffix(eg units, dollars, euro, ...)</description>
                         </input>
                     </layouts>
                 </inputs>
@@ -72,7 +84,7 @@
                     <name>data-url</name>
                 </attribute>
                 <attribute>
-                    <name>query</name>
+                    <name>fields</name>
                 </attribute>
             </attributes>
             <idm>
@@ -93,7 +105,20 @@
                     </input>
                     <layouts>
                         <input>
+                            <name>title</name>
+                            <description>The label for the title of the chart</description>
+                        </input>
+                        <input>
                             <name>x-axis-label</name>
+                            <description>The label for the X axis</description>
+                        </input>
+                        <input>
+                            <name>y-axis-label</name>
+                            <description>The label for the Y axis</description>
+                        </input>
+                        <input>
+                            <name>suffix</name>
+                            <description>The values suffix(eg units, dollars, euro, ...)</description>
                         </input>
                     </layouts>
                 </inputs>
@@ -106,7 +131,7 @@
                     <name>data-url</name>
                 </attribute>
                 <attribute>
-                    <name>query</name>
+                    <name>fields</name>
                 </attribute>
             </attributes>
             <idm>
@@ -127,7 +152,67 @@
                     </input>
                     <layouts>
                         <input>
+                            <name>title</name>
+                            <description>The label for the title of the chart</description>
+                        </input>
+                        <input>
                             <name>x-axis-label</name>
+                            <description>The label for the X axis</description>
+                        </input>
+                        <input>
+                            <name>y-axis-label</name>
+                            <description>The label for the Y axis</description>
+                        </input>
+                        <input>
+                            <name>suffix</name>
+                            <description>The values suffix(eg units, dollars, euro, ...)</description>
+                        </input>
+                    </layouts>
+                </inputs>
+            </idm>
+        </component>
+        <component>
+            <name>column3Dchart-datalet</name>
+            <attributes>
+                <attribute>
+                    <name>data-url</name>
+                </attribute>
+                <attribute>
+                    <name>fields</name>
+                </attribute>
+            </attributes>
+            <idm>
+                <inputs>
+                    <input>
+                        <name>Categories</name>
+                        <description>The chart categories. Its values will be put in the horizontal axis. You need one value for each series.</description>
+                        <scale>nominal</scale>
+                        <role>domain</role>
+                        <selection>11</selection>
+                    </input>
+                    <input>
+                        <name>Series</name>
+                        <description>The chart series. Its values will be put in the vertical axis.</description>
+                        <scale>nominal</scale>
+                        <role>domain</role>
+                        <selection>11</selection>
+                    </input>
+                    <layouts>
+                        <input>
+                            <name>title</name>
+                            <description>The label for the title of the chart</description>
+                        </input>
+                        <input>
+                            <name>x-axis-label</name>
+                            <description>The label for the X axis</description>
+                        </input>
+                        <input>
+                            <name>y-axis-label</name>
+                            <description>The label for the Y axis</description>
+                        </input>
+                        <input>
+                            <name>suffix</name>
+                            <description>The values suffix(eg units, dollars, euro, ...)</description>
                         </input>
                     </layouts>
                 </inputs>
@@ -140,7 +225,7 @@
                     <name>data-url</name>
                 </attribute>
                 <attribute>
-                    <name>query</name>
+                    <name>fields</name>
                 </attribute>
             </attributes>
             <idm>
@@ -154,7 +239,8 @@
                     </input>
                     <layouts>
                         <input>
-                            <name>x-axis-label</name>
+                            <name>name</name>
+                            <description>The name of the treemap</description>
                         </input>
                     </layouts>
                 </inputs>
@@ -167,7 +253,7 @@
                    <name>data-url</name>
                </attribute>
                <attribute>
-                   <name>query</name>
+                   <name>fields</name>
                </attribute>
            </attributes>
             <idm>
@@ -194,42 +280,25 @@
                         <selection>11</selection>
                     </input>
                     <layouts>
-                        <input>
-                            <name>x-axis-label</name>
-                        </input>
                     </layouts>
                 </inputs>
             </idm>
         </component>
         <component>
-            <name>column3Dchart-datalet</name>
+            <name>preview-datalet</name>
             <attributes>
                 <attribute>
                     <name>data-url</name>
-                </attribute>
-                <attribute>
-                    <name>query</name>
                 </attribute>
             </attributes>
             <idm>
                 <inputs>
                     <input>
-                        <name>Categories</name>
-                        <description>The chart categories. Its values will be put in the horizontal axis. You need one value for each series.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
-                    </input>
-                    <input>
-                        <name>Series</name>
-                        <description>The chart series. Its values will be put in the vertical axis.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
                     </input>
                     <layouts>
                         <input>
-                            <name>x-axis-label</name>
+                            <name>url</name>
+                            <description>The url of the page you want put in the preview</description>
                         </input>
                     </layouts>
                 </inputs>
