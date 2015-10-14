@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <handler_configuration>
     <deep_handler_configuration>
-        <components_repository_url_reference>http://192.168.214.128/DEEalerProvider/COMPONENTS/datalets/</components_repository_url_reference>
+        <components_repository_url_reference>http://192.168.214.128/DatalEts-Ecosystem-Provider/COMPONENTS/datalets/</components_repository_url_reference>
     </deep_handler_configuration>
     <components>
        <component>
@@ -24,8 +24,6 @@
                        <selection>*</selection>
                    </input>
                    <layouts>
-                       <input>
-                       </input>
                    </layouts>
                </inputs>
            </idm>
@@ -284,7 +282,7 @@
                 </inputs>
             </idm>
         </component>
-        <component>
+        <!--<component>
             <name>preview-datalet</name>
             <attributes>
                 <attribute>
@@ -303,6 +301,6 @@
                     </layouts>
                 </inputs>
             </idm>
-        </component>
+        </component>-->
     </components>    
 </handler_configuration>
