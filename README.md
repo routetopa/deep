@@ -1,6 +1,6 @@
 # DatalEts Ecosystem Provider (DEEP)
 
-The Dealer provider (DEEP) is a RESTful web service written in PHP. It make available a public discovery service that retrieve all the Datalet available into the system and a service call that provide a specific Datalet.
+The DatalEts Ecosystem Provider (DEEP) is a RESTful web service written in PHP. It make available a public discovery service that retrieve all the Datalet available into the system and a service call that provide a specific Datalet.
 Developed by the [UNISA TEAM](http://www.isislab.it/) for the [ROUTE-TO-PA PROJECT](http://www.routetopa.eu/).
 
 
