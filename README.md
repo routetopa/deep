@@ -16,7 +16,7 @@ Developed by the [UNISA TEAM](http://www.isislab.it/) for the [ROUTE-TO-PA PROJE
 
 ## Quick start
 
-Clone the repo: `git clone http://service.routetopa.eu:7480/admin/projects/isislab/DEEP`.
+Clone the repo: `git clone http://service.routetopa.eu:7480/admin/projects/isislab/DEEP.git`
 
 ### What's included
 
