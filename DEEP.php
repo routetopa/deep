@@ -1,13 +1,4 @@
 <?php
-/**
- * Created by :
- * Luigi Serra - luigser@gmail.com
- * Andrea Petta - andrpet@gmail.com
- *
- * Copyright (c) 2015 Dipartimento di Informatica - Università di Salerno - Italy
- *
- */
-
 /*
 @license
     The MIT License (MIT)
@@ -32,6 +23,12 @@
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     THE SOFTWARE.
 */
+
+/**
+ * Developed by :
+ * ROUTE-TO-PA Project - grant No 645860. - www.routetopa.eu
+
+ */
 
 ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
