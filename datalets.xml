@@ -282,5 +282,24 @@
                 </inputs>
             </idm>
         </component>
+
+        <component>
+            <name>preview-datalet</name>
+            <idm>
+                <inputs>
+                    <input>
+                        <name>url</name>
+                        <description></description>
+                    </input>
+                    <input>
+                        <name>data-url</name>
+                        <description></description>
+                    </input>
+                    <layouts>
+                    </layouts>
+                </inputs>
+            </idm>
+        </component>
+
     </components>
 </handler_configuration>
