@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE handler_configuration SYSTEM "datalets/datalets.dtd" [
+    <!ENTITY googlePiechart SYSTEM "datalets/googlePiechart.xml">
+]>
+
 <handler_configuration>
     <components>
+
+        <!--&googlePiechart;-->
+
        <component>
            <name>datatable-datalet</name>
            <attributes>
@@ -53,10 +61,6 @@
                     </input>
                     <layouts>
                         <input>
-                            <name>title</name>
-                            <description>The label for the title of the chart</description>
-                        </input>
-                        <input>
                             <name>x-axis-label</name>
                             <description>The label for the X axis</description>
                         </input>
@@ -99,10 +103,6 @@
                         <selection>11</selection>
                     </input>
                     <layouts>
-                        <input>
-                            <name>title</name>
-                            <description>The label for the title of the chart</description>
-                        </input>
                         <input>
                             <name>x-axis-label</name>
                             <description>The label for the X axis</description>
@@ -147,10 +147,6 @@
                     </input>
                     <layouts>
                         <input>
-                            <name>title</name>
-                            <description>The label for the title of the chart</description>
-                        </input>
-                        <input>
                             <name>x-axis-label</name>
                             <description>The label for the X axis</description>
                         </input>
@@ -194,10 +190,6 @@
                     </input>
                     <layouts>
                         <input>
-                            <name>title</name>
-                            <description>The label for the title of the chart</description>
-                        </input>
-                        <input>
                             <name>x-axis-label</name>
                             <description>The label for the X axis</description>
                         </input>
@@ -240,10 +232,6 @@
                         <selection>11</selection>
                     </input>
                     <layouts>
-                        <input>
-                            <name>title</name>
-                            <description>The label for the title of the chart</description>
-                        </input>
                         <input>
                             <name>x-axis-label</name>
                             <description>The label for the X axis</description>
@@ -302,10 +290,6 @@
                     </input>
                     <layouts>
                         <input>
-                            <name>title</name>
-                            <description>The label for the title of the chart</description>
-                        </input>
-                        <input>
                             <name>x-axis-label</name>
                             <description>The label for the X axis</description>
                         </input>
@@ -345,17 +329,13 @@
                         <selection>11</selection>
                     </input>
                     <input>
-                        <name>Size </name>
+                        <name>Size</name>
                         <description>The size for each series to create a concentric rings</description>
                         <scale>nominal</scale>
                         <role>domain</role>
                         <selection>11</selection>
                     </input>
                     <layouts>
-                        <input>
-                            <name>title</name>
-                            <description>The label for the title of the chart</description>
-                        </input>
                     </layouts>
                 </inputs>
             </idm>
@@ -387,10 +367,6 @@
                         <selection>11</selection>
                     </input>
                     <layouts>
-                        <input>
-                            <name>title</name>
-                            <description>The label for the title of the chart</description>
-                        </input>
                     </layouts>
                 </inputs>
             </idm>
@@ -415,10 +391,6 @@
                         <selection>*</selection>
                     </input>
                     <layouts>
-                        <input>
-                            <name>name</name>
-                            <description>The name of the treemap</description>
-                        </input>
                     </layouts>
                 </inputs>
             </idm>
@@ -461,25 +433,5 @@
                 </inputs>
             </idm>
         </component>
-        <!--<component>
-            <name>preview-datalet</name>
-            <attributes>
-                <attribute>
-                    <name>data-url</name>
-                </attribute>
-            </attributes>
-            <idm>
-                <inputs>
-                    <input>
-                    </input>
-                    <layouts>
-                        <input>
-                            <name>url</name>
-                            <description>The url of the page you want put in the preview</description>
-                        </input>
-                    </layouts>
-                </inputs>
-            </idm>
-        </component>-->
-    </components>    
+    </components>
 </handler_configuration>
