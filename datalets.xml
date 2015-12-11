@@ -1,63 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!DOCTYPE handler_configuration SYSTEM "datalets/datalets.dtd" [
-    <!ENTITY googlePiechart SYSTEM "datalets/googlePiechart.xml">
-]>
+<!DOCTYPE handler_configuration SYSTEM "datalets/datalets.dtd">
 
 <handler_configuration>
     <components>
-
-        <!--&googlePiechart;-->
-
-       <component>
-           <name>datatable-datalet</name>
-           <attributes>
-               <attribute>
-                   <name>data-url</name>
-               </attribute>
-               <attribute>
-                   <name>fields</name>
-               </attribute>
-           </attributes>
-           <idm>
-               <inputs>
-                   <input>
-                       <name>Cell</name>
-                       <description>The table cell</description>
-                       <scale>nominal</scale>
-                       <role>domain</role>
-                       <selection>*</selection>
-                   </input>
-                   <layouts>
-                   </layouts>
-               </inputs>
-           </idm>
-       </component>
-       <component>
+        <component>
+            <name>datatable-datalet</name>
+            <idm>
+                <inputs>
+                    <input>
+                        <name>Cell</name>
+                        <description>The table cell..</description>
+                        <selection>*</selection>
+                    </input>
+                    <layouts>
+                    </layouts>
+                </inputs>
+            </idm>
+        </component>
+        <component>
             <name>barchart-datalet</name>
-            <attributes>
-                <attribute>
-                    <name>data-url</name>
-                </attribute>
-                <attribute>
-                    <name>fields</name>
-                </attribute>
-            </attributes>
+            <type>base</type>
             <idm>
                 <inputs>
                     <input>
                         <name>Categories</name>
                         <description>The chart categories. Its values will be put in the horizontal axis. You need one value for each series.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
                     </input>
                     <input>
                         <name>Series</name>
                         <description>The chart series. Its values will be put in the vertical axis.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
                     </input>
                     <layouts>
                         <input>
@@ -78,29 +50,16 @@
         </component>
         <component>
             <name>columnchart-datalet</name>
-            <attributes>
-                <attribute>
-                    <name>data-url</name>
-                </attribute>
-                <attribute>
-                    <name>fields</name>
-                </attribute>
-            </attributes>
+            <type>base</type>
             <idm>
                 <inputs>
                     <input>
                         <name>Categories</name>
                         <description>The chart categories. Its values will be put in the horizontal axis. You need one value for each series.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
                     </input>
                     <input>
                         <name>Series</name>
                         <description>The chart series. Its values will be put in the vertical axis.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
                     </input>
                     <layouts>
                         <input>
@@ -121,29 +80,16 @@
         </component>
         <component>
             <name>linechart-datalet</name>
-            <attributes>
-                <attribute>
-                    <name>data-url</name>
-                </attribute>
-                <attribute>
-                    <name>fields</name>
-                </attribute>
-            </attributes>
+            <type>base</type>
             <idm>
                 <inputs>
                     <input>
                         <name>Categories</name>
                         <description>The chart categories. Its values will be put in the horizontal axis. You need one value for each series.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
                     </input>
                     <input>
                         <name>Series</name>
                         <description>The chart series. Its values will be put in the vertical axis.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
                     </input>
                     <layouts>
                         <input>
@@ -164,29 +110,18 @@
         </component>
         <component>
             <name>column3Dchart-datalet</name>
-            <attributes>
-                <attribute>
-                    <name>data-url</name>
-                </attribute>
-                <attribute>
-                    <name>fields</name>
-                </attribute>
-            </attributes>
+            <type>base</type>
             <idm>
                 <inputs>
                     <input>
                         <name>Categories</name>
-                        <description>The chart categories. Its values will be put in the horizontal axis. You need one value for each series.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
+                        <description>The chart categories. Its values will be put in the horizontal axis. You need one
+                            value for each series.
+                        </description>
                     </input>
                     <input>
                         <name>Series</name>
                         <description>The chart series. Its values will be put in the vertical axis.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
                     </input>
                     <layouts>
                         <input>
@@ -207,29 +142,16 @@
         </component>
         <component>
             <name>areachart-datalet</name>
-            <attributes>
-                <attribute>
-                    <name>data-url</name>
-                </attribute>
-                <attribute>
-                    <name>fields</name>
-                </attribute>
-            </attributes>
+            <type>base</type>
             <idm>
                 <inputs>
                     <input>
                         <name>Categories</name>
                         <description>The chart categories. Its values will be put in the horizontal axis. You need one value for each series.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
                     </input>
                     <input>
                         <name>Series</name>
                         <description>The chart series. Its values will be put in the vertical axis.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
                     </input>
                     <layouts>
                         <input>
@@ -250,43 +172,23 @@
         </component>
         <component>
             <name>bubble3d-datalet</name>
-            <attributes>
-                <attribute>
-                    <name>data-url</name>
-                </attribute>
-                <attribute>
-                    <name>fields</name>
-                </attribute>
-            </attributes>
             <idm>
                 <inputs>
                     <input>
                         <name>Categories</name>
                         <description>The chart categories. Its values will be put in the horizontal axis. You need one value for each series.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
                     </input>
                     <input>
                         <name>Y values</name>
                         <description>The chart plots y values. Its values will be put in the vertical axis.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
                     </input>
                     <input>
                         <name>Z values</name>
                         <description>The chart plots z value. Its values represent the size of the bubble.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
                     </input>
                     <input>
                         <name>Series</name>
                         <description>The chart series. Its values visualize multi- series bubbles chart.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
                     </input>
                     <layouts>
                         <input>
@@ -311,29 +213,16 @@
         </component>
         <component>
             <name>donutpie3dchart-datalet</name>
-            <attributes>
-                <attribute>
-                    <name>data-url</name>
-                </attribute>
-                <attribute>
-                    <name>fields</name>
-                </attribute>
-            </attributes>
+            <type>pie</type>
             <idm>
                 <inputs>
                     <input>
                         <name>Series</name>
-                        <description>The chart series. Its values will be put on slice of  each series.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
+                        <description>The chart series. Its values will be put on slice of each series.</description>
                     </input>
                     <input>
                         <name>Size</name>
                         <description>The size for each series to create a concentric rings</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
                     </input>
                     <layouts>
                     </layouts>
@@ -342,29 +231,16 @@
         </component>
         <component>
             <name>piechart-datalet</name>
-            <attributes>
-                <attribute>
-                    <name>data-url</name>
-                </attribute>
-                <attribute>
-                    <name>fields</name>
-                </attribute>
-            </attributes>
+            <type>pie</type>
             <idm>
                 <inputs>
                     <input>
                         <name>Series</name>
-                        <description>The chart series. Its values will be put on slice of  each series.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
+                        <description>The chart series. Its values will be put on slice of each series.</description>
                     </input>
                     <input>
-                        <name>Size </name>
+                        <name>Size</name>
                         <description>The size for each series to create a concentric rings</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
                     </input>
                     <layouts>
                     </layouts>
@@ -373,21 +249,11 @@
         </component>
         <component>
             <name>treemap-datalet</name>
-            <attributes>
-                <attribute>
-                    <name>data-url</name>
-                </attribute>
-                <attribute>
-                    <name>fields</name>
-                </attribute>
-            </attributes>
             <idm>
                 <inputs>
                     <input>
                         <name>Level</name>
                         <description>It is the level field that the datalet will use to group the values at corrisponding field number level.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
                         <selection>*</selection>
                     </input>
                     <layouts>
@@ -395,38 +261,21 @@
                 </inputs>
             </idm>
         </component>
-	    <component>
-           <name>leafletjs-datalet</name>
-           <attributes>
-               <attribute>
-                   <name>data-url</name>
-               </attribute>
-               <attribute>
-                   <name>fields</name>
-               </attribute>
-           </attributes>
+        <component>
+            <name>leafletjs-datalet</name>
             <idm>
                 <inputs>
                     <input>
                         <name>Latitude</name>
                         <description>It is latitude of the points you want to show in the map.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
                     </input>
                     <input>
                         <name>Longitude</name>
                         <description>It is longitude of the points you want to show in the map.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
                     </input>
                     <input>
                         <name>Balloon content</name>
                         <description>It is the text associated to the marker or the link to the image related to the camera associated to each points.</description>
-                        <scale>nominal</scale>
-                        <role>domain</role>
-                        <selection>11</selection>
                     </input>
                     <layouts>
                     </layouts>

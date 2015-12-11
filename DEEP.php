@@ -109,6 +109,7 @@ class DEEP {
             $this->app->get('/'.$component->name, function() use($component, $repository_url){
                 $response = array(
                     "name"           => $component->name."",
+                    "type"           => $component->type."",
                     "bridge_link"    => $repository_url."",
                     "component_link" => $component->name."/".$component->name.".html",
                     "idm"            => $component->idm
