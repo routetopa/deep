@@ -390,9 +390,9 @@
                 </inputs>
             </idm>
         </component>
-
         <component>
             <name>preview-datalet</name>
+            <type>hidden</type>
             <idm>
                 <inputs>
                     <input>
@@ -408,6 +408,5 @@
                 </inputs>
             </idm>
         </component>
-
     </components>
 </handler_configuration>
