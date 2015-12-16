@@ -1,0 +1,11 @@
+<configuration>
+
+    <deep_datalet_configuration>
+        <components_repository_url_reference>http://192.168.232.128/DEEalerProvider/COMPONENTS/datalets/</components_repository_url_reference>
+    </deep_datalet_configuration>
+
+    <deep_controllets_configuration>
+        <components_repository_url_reference>http://192.168.232.128/DEEalerProvider/COMPONENTS/controllets/</components_repository_url_reference>
+    </deep_controllets_configuration>
+
+</configuration>
