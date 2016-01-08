@@ -69,7 +69,6 @@ class DEEP {
         $this->app->get('/datalets-list', function(){
             $this->app->response()->header("Content-Type", "application/json");
             $this->app->response()->header("Access-Control-Allow-Origin", "*");
-            $this->app->response()->header("Access-Control-Expose-Headers", "Location");
             echo json_encode($this->all_datalets);
 
         });
@@ -78,7 +77,6 @@ class DEEP {
         $this->app->get('/controllets-list', function(){
             $this->app->response()->header("Content-Type", "application/json");
             $this->app->response()->header("Access-Control-Allow-Origin", "*");
-            $this->app->response()->header("Access-Control-Expose-Headers", "Location");
             echo json_encode($this->all_controllets);
 
         });
@@ -126,7 +124,6 @@ class DEEP {
 
                 $this->app->response()->header("Content-Type", "application/json");
                 $this->app->response()->header("Access-Control-Allow-Origin", "*");
-                $this->app->response()->header("Access-Control-Expose-Headers", "Location");
                 echo json_encode($response);
             });
         }
