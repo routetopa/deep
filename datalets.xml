@@ -169,24 +169,24 @@
                 </inputs>
             </idm>
         </component>
-        <component>
-            <name>donutpie3dchart-datalet</name>
-            <type>pie</type>
-            <idm>
-                <inputs>
-                    <input>
-                        <name>Series</name>
-                        <description>pieSeriesDescription</description>
-                    </input>
-                    <input>
-                        <name>Size</name>
-                        <description>pieSizeDescription</description>
-                    </input>
-                    <layouts>
-                    </layouts>
-                </inputs>
-            </idm>
-        </component>
+        <!--<component>-->
+            <!--<name>donutpie3dchart-datalet</name>-->
+            <!--<type>pie</type>-->
+            <!--<idm>-->
+                <!--<inputs>-->
+                    <!--<input>-->
+                        <!--<name>Series</name>-->
+                        <!--<description>pieSeriesDescription</description>-->
+                    <!--</input>-->
+                    <!--<input>-->
+                        <!--<name>Size</name>-->
+                        <!--<description>pieSizeDescription</description>-->
+                    <!--</input>-->
+                    <!--<layouts>-->
+                    <!--</layouts>-->
+                <!--</inputs>-->
+            <!--</idm>-->
+        <!--</component>-->
         <component>
             <name>piechart-datalet</name>
             <type>pie</type>
