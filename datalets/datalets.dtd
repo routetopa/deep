@@ -1,19 +1,14 @@
 <!ELEMENT handler_configuration (components)>
 <!ELEMENT components (component*)>
 <!ELEMENT component (name, type, idm)>
-<!--<!ELEMENT component (name, attributes, idm)>-->
-<!--<!ELEMENT attributes (attribute*)>-->
-<!--<!ELEMENT attribute (name)>-->
 <!ELEMENT idm (inputs*)>
 <!ELEMENT inputs (input*, layouts)>
 <!ELEMENT layouts (input*)>
-<!--<!ELEMENT input (name, description?, scale?, role?, selection?, type?, validator?)>-->
-<!ELEMENT input (name, description?, selection?, type?, validator?)>
+<!ELEMENT input (name, description?, selection?, type?, validator?, list?)>
+<!ELEMENT list (item+)>
+<!ELEMENT item (#PCDATA)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT description (#PCDATA)>
-<!--<!ELEMENT scale (#PCDATA)>-->
-<!--<!ELEMENT role (#PCDATA)>-->
 <!ELEMENT selection (#PCDATA)>
 <!ELEMENT type (#PCDATA)>
 <!ELEMENT validator (#PCDATA)>
-

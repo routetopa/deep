@@ -4,14 +4,16 @@
 
 <handler_configuration>
     <components>
+        
+        <!--table-->
         <component>
             <name>datatable-datalet</name>
             <type>table</type>
             <idm>
                 <inputs>
                     <input>
-                        <name>Cell</name>
-                        <description>cellDescription</description>
+                        <name>Column</name>
+                        <description>ColumnDescription</description>
                         <selection>*</selection>
                     </input>
                     <layouts>
@@ -19,210 +21,458 @@
                 </inputs>
             </idm>
         </component>
+
+        <!--multiseries-->
+
+        <!--bar-->
         <component>
             <name>barchart-datalet</name>
-            <type>base</type>
+            <type>multiseries</type>
             <idm>
                 <inputs>
                     <input>
-                        <name>Categories</name>
-                        <description>categoriesDescription</description>
+                        <name>XAxis</name>
+                        <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>Series</name>
-                        <description>seriesDescription</description>
+                        <name>YAxis</name>
+                        <description>YAxisDescription</description>
                     </input>
                     <layouts>
                         <input>
                             <name>x-axis-label</name>
                             <description>XAxisLabelDescription</description>
+                            <type>text</type>
                         </input>
                         <input>
                             <name>y-axis-label</name>
                             <description>YAxisLabelDescription</description>
+                            <type>text</type>
                         </input>
                         <input>
                             <name>suffix</name>
                             <description>suffixDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>theme</name>
+                            <description>themeDescription</description>
+                            <type>list</type>
+                            <list>
+                                <item>themeBase</item>
+                                <item>themeDarkUnika</item>
+                                <item>themeSandSignika</item>
+                                <item>themeGridLight</item>
+                                <item>themeSpod</item>
+                            </list>
                         </input>
                     </layouts>
                 </inputs>
             </idm>
         </component>
+        <!--column-->
         <component>
             <name>columnchart-datalet</name>
-            <type>base</type>
+            <type>multiseries</type>
             <idm>
                 <inputs>
                     <input>
-                        <name>Categories</name>
-                        <description>categoriesDescription</description>
+                        <name>XAxis</name>
+                        <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>Series</name>
-                        <description>seriesDescription</description>
+                        <name>YAxis</name>
+                        <description>YAxisDescription</description>
                     </input>
                     <layouts>
                         <input>
                             <name>x-axis-label</name>
                             <description>XAxisLabelDescription</description>
+                            <type>text</type>
                         </input>
                         <input>
                             <name>y-axis-label</name>
                             <description>YAxisLabelDescription</description>
+                            <type>text</type>
                         </input>
                         <input>
                             <name>suffix</name>
                             <description>suffixDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>theme</name>
+                            <description>themeDescription</description>
+                            <type>list</type>
+                            <list>
+                                <item>themeBase</item>
+                                <item>themeDarkUnika</item>
+                                <item>themeSandSignika</item>
+                                <item>themeGridLight</item>
+                                <item>themeSpod</item>
+                            </list>
                         </input>
                     </layouts>
                 </inputs>
             </idm>
         </component>
-        <component>
-            <name>linechart-datalet</name>
-            <type>base</type>
-            <idm>
-                <inputs>
-                    <input>
-                        <name>Categories</name>
-                        <description>categoriesDescription</description>
-                    </input>
-                    <input>
-                        <name>Series</name>
-                        <description>seriesDescription</description>
-                    </input>
-                    <layouts>
-                        <input>
-                            <name>x-axis-label</name>
-                            <description>XAxisLabelDescription</description>
-                        </input>
-                        <input>
-                            <name>y-axis-label</name>
-                            <description>YAxisLabelDescription</description>
-                        </input>
-                        <input>
-                            <name>suffix</name>
-                            <description>suffixDescription</description>
-                        </input>
-                    </layouts>
-                </inputs>
-            </idm>
-        </component>
-        <component>
-            <name>column3Dchart-datalet</name>
-            <type>base</type>
-            <idm>
-                <inputs>
-                    <input>
-                        <name>Categories</name>
-                        <description>categoriesDescription</description>
-                    </input>
-                    <input>
-                        <name>Series</name>
-                        <description>seriesDescription</description>
-                    </input>
-                    <layouts>
-                        <input>
-                            <name>x-axis-label</name>
-                            <description>XAxisLabelDescription</description>
-                        </input>
-                        <input>
-                            <name>y-axis-label</name>
-                            <description>YAxisLabelDescription</description>
-                        </input>
-                        <input>
-                            <name>suffix</name>
-                            <description>suffixDescription</description>
-                        </input>
-                    </layouts>
-                </inputs>
-            </idm>
-        </component>
+        <!--area-->
         <component>
             <name>areachart-datalet</name>
-            <type>base</type>
+            <type>multiseries</type>
             <idm>
                 <inputs>
                     <input>
-                        <name>Categories</name>
-                        <description>categoriesDescription</description>
+                        <name>XAxis</name>
+                        <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>Series</name>
-                        <description>seriesDescription</description>
+                        <name>YAxis</name>
+                        <description>YAxisDescription</description>
                     </input>
                     <layouts>
                         <input>
                             <name>x-axis-label</name>
                             <description>XAxisLabelDescription</description>
+                            <type>text</type>
                         </input>
                         <input>
                             <name>y-axis-label</name>
                             <description>YAxisLabelDescription</description>
+                            <type>text</type>
                         </input>
                         <input>
                             <name>suffix</name>
                             <description>suffixDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>theme</name>
+                            <description>themeDescription</description>
+                            <type>list</type>
+                            <list>
+                                <item>themeBase</item>
+                                <item>themeDarkUnika</item>
+                                <item>themeSandSignika</item>
+                                <item>themeGridLight</item>
+                                <item>themeSpod</item>
+                            </list>
                         </input>
                     </layouts>
                 </inputs>
             </idm>
         </component>
-        <!--<component>-->
-            <!--<name>donutpie3dchart-datalet</name>-->
-            <!--<type>pie</type>-->
-            <!--<idm>-->
-                <!--<inputs>-->
-                    <!--<input>-->
-                        <!--<name>Series</name>-->
-                        <!--<description>pieSeriesDescription</description>-->
-                    <!--</input>-->
-                    <!--<input>-->
-                        <!--<name>Size</name>-->
-                        <!--<description>pieSizeDescription</description>-->
-                    <!--</input>-->
-                    <!--<layouts>-->
-                    <!--</layouts>-->
-                <!--</inputs>-->
-            <!--</idm>-->
-        <!--</component>-->
+        <!--line-->
+        <component>
+            <name>linechart-datalet</name>
+            <type>multiseries</type>
+            <idm>
+                <inputs>
+                    <input>
+                        <name>XAxis</name>
+                        <description>XAxisDescription</description>
+                    </input>
+                    <input>
+                        <name>YAxis</name>
+                        <description>YAxisDescription</description>
+                    </input>
+                    <layouts>
+                        <input>
+                            <name>x-axis-label</name>
+                            <description>XAxisLabelDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>y-axis-label</name>
+                            <description>YAxisLabelDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>suffix</name>
+                            <description>suffixDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>theme</name>
+                            <description>themeDescription</description>
+                            <type>list</type>
+                            <list>
+                                <item>themeBase</item>
+                                <item>themeDarkUnika</item>
+                                <item>themeSandSignika</item>
+                                <item>themeGridLight</item>
+                                <item>themeSpod</item>
+                            </list>
+                        </input>
+                    </layouts>
+                </inputs>
+            </idm>
+        </component>
+        <!--heatmap-->
+        <component>
+            <name>heatmap-datalet</name>
+            <type>multiseries</type>
+            <idm>
+                <inputs>
+                    <input>
+                        <name>XAxis</name>
+                        <description>XAxisDescription</description>
+                    </input>
+                    <input>
+                        <name>YAxis</name>
+                        <description>YAxisDescription</description>
+                    </input>
+                    <layouts>
+                        <input>
+                            <name>x-axis-label</name>
+                            <description>XAxisLabelDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>y-axis-label</name>
+                            <description>YAxisLabelDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>suffix</name>
+                            <description>suffixDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>theme</name>
+                            <description>themeDescription</description>
+                            <type>list</type>
+                            <list>
+                                <item>themeBase</item>
+                                <item>themeDarkUnika</item>
+                                <item>themeSandSignika</item>
+                                <item>themeGridLight</item>
+                                <item>themeSpod</item>
+                            </list>
+                        </input>
+                    </layouts>
+                </inputs>
+            </idm>
+        </component>
+
+        <!--multiseries_stacked-->
+
+        <!--bar stacked-->
+        <component>
+            <name>barchart_stacked-datalet</name>
+            <type>multiseries</type>
+            <idm>
+                <inputs>
+                    <input>
+                        <name>XAxis</name>
+                        <description>XAxisDescription</description>
+                    </input>
+                    <input>
+                        <name>YAxis</name>
+                        <description>YAxisDescription</description>
+                    </input>
+                    <layouts>
+                        <input>
+                            <name>x-axis-label</name>
+                            <description>XAxisLabelDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>y-axis-label</name>
+                            <description>YAxisLabelDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>suffix</name>
+                            <description>suffixDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>theme</name>
+                            <description>themeDescription</description>
+                            <type>list</type>
+                            <list>
+                                <item>themeBase</item>
+                                <item>themeDarkUnika</item>
+                                <item>themeSandSignika</item>
+                                <item>themeGridLight</item>
+                                <item>themeSpod</item>
+                            </list>
+                        </input>
+                        <input>
+                            <name>stack</name>
+                            <description>stackDescription</description>
+                            <type>list</type>
+                            <list>
+                                <item>normal</item>
+                                <item>percent</item>
+                            </list>
+                        </input>
+                    </layouts>
+                </inputs>
+            </idm>
+        </component>
+        <!--column stacked-->
+        <component>
+            <name>columnchart_stacked-datalet</name>
+            <type>multiseries</type>
+            <idm>
+                <inputs>
+                    <input>
+                        <name>XAxis</name>
+                        <description>XAxisDescription</description>
+                    </input>
+                    <input>
+                        <name>YAxis</name>
+                        <description>YAxisDescription</description>
+                    </input>
+                    <layouts>
+                        <input>
+                            <name>x-axis-label</name>
+                            <description>XAxisLabelDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>y-axis-label</name>
+                            <description>YAxisLabelDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>suffix</name>
+                            <description>suffixDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>theme</name>
+                            <description>themeDescription</description>
+                            <type>list</type>
+                            <list>
+                                <item>themeBase</item>
+                                <item>themeDarkUnika</item>
+                                <item>themeSandSignika</item>
+                                <item>themeGridLight</item>
+                                <item>themeSpod</item>
+                            </list>
+                        </input>
+                        <input>
+                            <name>stack</name>
+                            <description>stackDescription</description>
+                            <type>list</type>
+                            <list>
+                                <item>normal</item>
+                                <item>percent</item>
+                            </list>
+                        </input>
+                    </layouts>
+                </inputs>
+            </idm>
+        </component>
+        <!--area stacked-->
+        <component>
+            <name>areachart_stacked-datalet</name>
+            <type>multiseries</type>
+            <idm>
+                <inputs>
+                    <input>
+                        <name>XAxis</name>
+                        <description>XAxisDescription</description>
+                    </input>
+                    <input>
+                        <name>YAxis</name>
+                        <description>YAxisDescription</description>
+                    </input>
+                    <layouts>
+                        <input>
+                            <name>x-axis-label</name>
+                            <description>XAxisLabelDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>y-axis-label</name>
+                            <description>YAxisLabelDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>suffix</name>
+                            <description>suffixDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>theme</name>
+                            <description>themeDescription</description>
+                            <type>list</type>
+                            <list>
+                                <item>themeBase</item>
+                                <item>themeDarkUnika</item>
+                                <item>themeSandSignika</item>
+                                <item>themeGridLight</item>
+                                <item>themeSpod</item>
+                            </list>
+                        </input>
+                        <input>
+                            <name>stack</name>
+                            <description>stackDescription</description>
+                            <type>list</type>
+                            <list>
+                                <item>normal</item>
+                                <item>percent</item>
+                            </list>
+                        </input>
+                    </layouts>
+                </inputs>
+            </idm>
+        </component>
+
+        <!--pie-->
         <component>
             <name>piechart-datalet</name>
             <type>pie</type>
             <idm>
                 <inputs>
                     <input>
-                        <name>Series</name>
-                        <description>pieSeriesDescription</description>
+                        <name>SliceLabels</name>
+                        <description>SliceLabelsDescription</description>
                     </input>
                     <input>
-                        <name>Size</name>
-                        <description>pieSizeDescription</description>
+                        <name>SliceSizes</name>
+                        <description>SliceSizesDescription</description>
                     </input>
                     <layouts>
+                        <input>
+                            <name>suffix</name>
+                            <description>suffixDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>theme</name>
+                            <description>themeDescription</description>
+                            <type>list</type>
+                            <list>
+                                <item>themeBase</item>
+                                <item>themeDarkUnika</item>
+                                <item>themeSandSignika</item>
+                                <item>themeGridLight</item>
+                                <item>themeSpod</item>
+                            </list>
+                        </input>
+                        <input>
+                            <name>donut</name>
+                            <description>donutDescription</description>
+                            <type>list</type>
+                            <list>
+                                <item>false</item>
+                                <item>true</item>
+                            </list>
+                        </input>
                     </layouts>
                 </inputs>
             </idm>
         </component>
-        <component>
-            <name>treemap-datalet</name>
-            <type>treemap</type>
-            <idm>
-                <inputs>
-                    <input>
-                        <name>Level</name>
-                        <description>levelDescription</description>
-                        <selection>*</selection>
-                    </input>
-                    <layouts>
-                    </layouts>
-                </inputs>
-            </idm>
-        </component>
+
+        <!--map-->
         <component>
             <name>leafletjs-datalet</name>
-            <type>leafletjs</type>
+            <type>map</type>
             <idm>
                 <inputs>
                     <input>
@@ -234,162 +484,17 @@
                         <description>LongitudeDescription</description>
                     </input>
                     <input>
-                        <name>Balloon content</name>
+                        <name>BalloonContent</name>
                         <description>BalloonContentDescription</description>
+                        <selection>*</selection>
                     </input>
                     <layouts>
                     </layouts>
                 </inputs>
             </idm>
         </component>
-        <component>
-            <name>bubble3d-datalet</name>
-            <type>bubble</type>
-            <idm>
-                <inputs>
-                    <input>
-                        <name>Categories</name>
-                        <description>bubbleCategoriesDescription</description>
-                    </input>
-                    <input>
-                        <name>Y values</name>
-                        <description>bubbleYValuesDescription</description>
-                    </input>
-                    <input>
-                        <name>Z values</name>
-                        <description>bubbleZValuesDescription</description>
-                    </input>
-                    <input>
-                        <name>Series</name>
-                        <description>bubbleSeriesDescription</description>
-                    </input>
-                    <layouts>
-                        <input>
-                            <name>x-axis-label</name>
-                            <description>XAxisLabelDescription</description>
-                        </input>
-                        <input>
-                            <name>y-axis-label</name>
-                            <description>YAxisLabelDescription</description>
-                        </input>
-                        <input>
-                            <name>suffix</name>
-                            <description>suffixDescription</description>
-                        </input>
-                    </layouts>
-                </inputs>
-            </idm>
-        </component>
-        <component>
-            <name>bubblechart-datalet</name>
-            <type>bubble</type>
-            <idm>
-                <inputs>
-                    <input>
-                        <name>Categories</name>
-                        <description>bubbleCategoriesDescription</description>
-                    </input>
-                    <input>
-                        <name>Y values</name>
-                        <description>bubbleYValuesDescription</description>
-                    </input>
-                    <input>
-                        <name>Z values</name>
-                        <description>bubbleZValuesDescription</description>
-                    </input>
-                    <input>
-                        <name>Series</name>
-                        <description>bubbleSeriesDescription</description>
-                    </input>
-                    <layouts>
-                        <input>
-                            <name>x-axis-label</name>
-                            <description>XAxisLabelDescription</description>
-                        </input>
-                        <input>
-                            <name>y-axis-label</name>
-                            <description>YAxisLabelDescription</description>
-                        </input>
-                        <input>
-                            <name>suffix</name>
-                            <description>suffixDescription</description>
-                        </input>
-                    </layouts>
-                </inputs>
-            </idm>
-        </component>
-        <component>
-            <name>scatterchart-datalet</name>
-            <type>scatter</type>
-            <idm>
-                <inputs>
-                    <input>
-                        <name>Categories</name>
-                        <description>scatterCategoriesDescription</description>
-                    </input>
-                    <input>
-                        <name>X values</name>
-                        <description>scatterXValuesDescription</description>
-                    </input>
-                    <input>
-                        <name>Y values</name>
-                        <description>scatterYValuesDescription</description>
-                    </input>
-                    <layouts>
-                        <input>
-                            <name>x-axis-label</name>
-                            <description>XAxisLabelDescription</description>
-                        </input>
-                        <input>
-                            <name>y-axis-label</name>
-                            <description>YAxisLabelDescription</description>
-                        </input>
-                        <input>
-                            <name>suffix</name>
-                            <description>suffixDescription</description>
-                        </input>
-                    </layouts>
-                </inputs>
-            </idm>
-        </component>
-        <component>
-            <name>heatmap-datalet</name>
-            <type>heatmap</type>
-            <idm>
-                <inputs>
-                    <input>
-                        <name>Categories</name>
-                        <description>heatmapCategoriesDescription</description>
-                    </input>
-                    <input>
-                        <name>Series</name>
-                        <description>seriesDescription</description>
-                    </input>
-                    <input>
-                        <name>Series</name>
-                        <description>seriesDescription</description>
-                    </input>
-                    <input>
-                        <name>Series</name>
-                        <description>seriesDescription</description>
-                    </input>
-                    <input>
-                        <name>Series</name>
-                        <description>seriesDescription</description>
-                    </input>
-                    <input>
-                        <name>Series</name>
-                        <description>seriesDescription</description>
-                    </input>
-                    <input>
-                        <name>Series</name>
-                        <description>seriesDescription</description>
-                    </input>
-                    <layouts>
-                    </layouts>
-                </inputs>
-            </idm>
-        </component>
+
+        <!--preview HIDDEN-->
         <component>
             <name>preview-datalet</name>
             <type>hidden</type>
@@ -408,5 +513,6 @@
                 </inputs>
             </idm>
         </component>
+
     </components>
 </handler_configuration>
