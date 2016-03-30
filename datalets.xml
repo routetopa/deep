@@ -4,7 +4,7 @@
 
 <handler_configuration>
     <components>
-        
+
         <!--table-->
         <component>
             <name>datatable-datalet</name>
@@ -35,7 +35,7 @@
                         <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>YAxis</name>
+                        <name>numericYAxis</name>
                         <description>YAxisDescription</description>
                     </input>
                     <layouts>
@@ -81,7 +81,7 @@
                         <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>YAxis</name>
+                        <name>numericYAxis</name>
                         <description>YAxisDescription</description>
                     </input>
                     <layouts>
@@ -127,7 +127,7 @@
                         <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>YAxis</name>
+                        <name>numericYAxis</name>
                         <description>YAxisDescription</description>
                     </input>
                     <layouts>
@@ -173,7 +173,7 @@
                         <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>YAxis</name>
+                        <name>numericYAxis</name>
                         <description>YAxisDescription</description>
                     </input>
                     <layouts>
@@ -219,7 +219,7 @@
                         <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>YAxis</name>
+                        <name>numericYAxis</name>
                         <description>YAxisDescription</description>
                     </input>
                     <layouts>
@@ -268,7 +268,7 @@
                         <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>YAxis</name>
+                        <name>numericYAxis</name>
                         <description>YAxisDescription</description>
                     </input>
                     <layouts>
@@ -323,7 +323,7 @@
                         <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>YAxis</name>
+                        <name>numericYAxis</name>
                         <description>YAxisDescription</description>
                     </input>
                     <layouts>
@@ -378,7 +378,7 @@
                         <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>YAxis</name>
+                        <name>numericYAxis</name>
                         <description>YAxisDescription</description>
                     </input>
                     <layouts>
@@ -468,6 +468,68 @@
                 </inputs>
             </idm>
         </component>
+
+        <!--scatter-->
+        <component>
+            <name>scatterchart-datalet</name>
+            <type>scatter</type>
+            <idm>
+                <inputs>
+                    <input>
+                        <name>Categories</name>
+                        <description>CategoriesDescription</description>
+                    </input>
+                    <input>
+                        <name>numericXAxis</name>
+                        <description>XAxisDescription</description>
+                    </input>
+                    <input>
+                        <name>numericYAxis</name>
+                        <description>YAxisDescription</description>
+                    </input>
+                    <layouts>
+                        <input>
+                            <name>x-axis-label</name>
+                            <description>XAxisLabelDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>y-axis-label</name>
+                            <description>YAxisLabelDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>theme</name>
+                            <description>themeDescription</description>
+                            <type>list</type>
+                            <list>
+                                <item>themeBase</item>
+                                <item>themeDarkUnika</item>
+                                <item>themeSandSignika</item>
+                                <item>themeGridLight</item>
+                                <item>themeSpod</item>
+                            </list>
+                        </input>
+                    </layouts>
+                </inputs>
+            </idm>
+        </component>
+
+        <!--&lt;!&ndash;bubble&ndash;&gt;-->
+        <!--<component>-->
+            <!--<name>bubblechart-datalet</name>-->
+            <!--<type>bubble</type>-->
+            <!--<idm>-->
+            <!--</idm>-->
+        <!--</component>-->
+
+        <!--&lt;!&ndash;treemap&ndash;&gt;-->
+        <!--<component>-->
+            <!--<name>treemap-datalet</name>-->
+            <!--<type>treemap</type>-->
+            <!--<idm>-->
+            <!--</idm>-->
+        <!--</component>-->
 
         <!--map-->
         <component>
