@@ -14,7 +14,7 @@
                     <input>
                         <name>Column</name>
                         <description>ColumnDescription</description>
-                        <selection>*</selection>
+                        <selection>+</selection>
                     </input>
                     <layouts>
                     </layouts>
@@ -22,11 +22,57 @@
             </idm>
         </component>
 
+        <!--pie-->
+        <component>
+            <name>piechart-datalet</name>
+            <type>pie</type>
+            <idm>
+                <inputs>
+                    <input>
+                        <name>SliceLabels</name>
+                        <description>SliceLabelsDescription</description>
+                    </input>
+                    <input>
+                        <name>SliceSizes</name>
+                        <description>SliceSizesDescription</description>
+                    </input>
+                    <layouts>
+                        <input>
+                            <name>suffix</name>
+                            <description>suffixDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>theme</name>
+                            <description>themeDescription</description>
+                            <type>list</type>
+                            <list>
+                                <item>themeBase</item>
+                                <item>themeDarkUnika</item>
+                                <item>themeSandSignika</item>
+                                <item>themeGridLight</item>
+                                <item>themeSpod</item>
+                            </list>
+                        </input>
+                        <input>
+                            <name>donut</name>
+                            <description>donutDescription</description>
+                            <type>list</type>
+                            <list>
+                                <item>false</item>
+                                <item>true</item>
+                            </list>
+                        </input>
+                    </layouts>
+                </inputs>
+            </idm>
+        </component>
+
         <!--multiseries-->
 
-        <!--bar-->
+        <!--column-->
         <component>
-            <name>barchart-datalet</name>
+            <name>columnchart-datalet</name>
             <type>multiseries</type>
             <idm>
                 <inputs>
@@ -35,7 +81,7 @@
                         <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>numericYAxis</name>
+                        <name>NumericYAxis</name>
                         <description>YAxisDescription</description>
                     </input>
                     <layouts>
@@ -70,9 +116,9 @@
                 </inputs>
             </idm>
         </component>
-        <!--column-->
+        <!--bar-->
         <component>
-            <name>columnchart-datalet</name>
+            <name>barchart-datalet</name>
             <type>multiseries</type>
             <idm>
                 <inputs>
@@ -81,7 +127,7 @@
                         <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>numericYAxis</name>
+                        <name>NumericYAxis</name>
                         <description>YAxisDescription</description>
                     </input>
                     <layouts>
@@ -127,7 +173,7 @@
                         <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>numericYAxis</name>
+                        <name>NumericYAxis</name>
                         <description>YAxisDescription</description>
                     </input>
                     <layouts>
@@ -173,7 +219,7 @@
                         <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>numericYAxis</name>
+                        <name>NumericYAxis</name>
                         <description>YAxisDescription</description>
                     </input>
                     <layouts>
@@ -219,7 +265,7 @@
                         <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>numericYAxis</name>
+                        <name>NumericYAxis</name>
                         <description>YAxisDescription</description>
                     </input>
                     <layouts>
@@ -257,9 +303,9 @@
 
         <!--multiseries_stacked-->
 
-        <!--bar stacked-->
+        <!--column stacked-->
         <component>
-            <name>barchart_stacked-datalet</name>
+            <name>columnchart_stacked-datalet</name>
             <type>multiseries</type>
             <idm>
                 <inputs>
@@ -268,7 +314,7 @@
                         <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>numericYAxis</name>
+                        <name>NumericYAxis</name>
                         <description>YAxisDescription</description>
                     </input>
                     <layouts>
@@ -312,9 +358,9 @@
                 </inputs>
             </idm>
         </component>
-        <!--column stacked-->
+        <!--bar stacked-->
         <component>
-            <name>columnchart_stacked-datalet</name>
+            <name>barchart_stacked-datalet</name>
             <type>multiseries</type>
             <idm>
                 <inputs>
@@ -323,7 +369,7 @@
                         <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>numericYAxis</name>
+                        <name>NumericYAxis</name>
                         <description>YAxisDescription</description>
                     </input>
                     <layouts>
@@ -378,7 +424,7 @@
                         <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>numericYAxis</name>
+                        <name>NumericYAxis</name>
                         <description>YAxisDescription</description>
                     </input>
                     <layouts>
@@ -423,47 +469,26 @@
             </idm>
         </component>
 
-        <!--pie-->
+        <!--map-->
         <component>
-            <name>piechart-datalet</name>
-            <type>pie</type>
+            <name>leafletjs-datalet</name>
+            <type>map</type>
             <idm>
                 <inputs>
                     <input>
-                        <name>SliceLabels</name>
-                        <description>SliceLabelsDescription</description>
+                        <name>Latitude</name>
+                        <description>LatitudeDescription</description>
                     </input>
                     <input>
-                        <name>SliceSizes</name>
-                        <description>SliceSizesDescription</description>
+                        <name>Longitude</name>
+                        <description>LongitudeDescription</description>
+                    </input>
+                    <input>
+                        <name>BalloonContent</name>
+                        <description>BalloonContentDescription</description>
+                        <selection>*</selection>
                     </input>
                     <layouts>
-                        <input>
-                            <name>suffix</name>
-                            <description>suffixDescription</description>
-                            <type>text</type>
-                        </input>
-                        <input>
-                            <name>theme</name>
-                            <description>themeDescription</description>
-                            <type>list</type>
-                            <list>
-                                <item>themeBase</item>
-                                <item>themeDarkUnika</item>
-                                <item>themeSandSignika</item>
-                                <item>themeGridLight</item>
-                                <item>themeSpod</item>
-                            </list>
-                        </input>
-                        <input>
-                            <name>donut</name>
-                            <description>donutDescription</description>
-                            <type>list</type>
-                            <list>
-                                <item>false</item>
-                                <item>true</item>
-                            </list>
-                        </input>
                     </layouts>
                 </inputs>
             </idm>
@@ -476,16 +501,17 @@
             <idm>
                 <inputs>
                     <input>
-                        <name>Categories</name>
-                        <description>CategoriesDescription</description>
-                    </input>
-                    <input>
-                        <name>numericXAxis</name>
+                        <name>NumericXAxis</name>
                         <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>numericYAxis</name>
+                        <name>NumericYAxis</name>
                         <description>YAxisDescription</description>
+                    </input>
+                    <input>
+                        <name>Categories</name>
+                        <description>CategoriesDescription</description>
+                        <selection>?</selection>
                     </input>
                     <layouts>
                         <input>
@@ -515,40 +541,71 @@
             </idm>
         </component>
 
-        <!--&lt;!&ndash;bubble&ndash;&gt;-->
-        <!--<component>-->
-            <!--<name>bubblechart-datalet</name>-->
-            <!--<type>bubble</type>-->
-            <!--<idm>-->
-            <!--</idm>-->
-        <!--</component>-->
-
-        <!--&lt;!&ndash;treemap&ndash;&gt;-->
-        <!--<component>-->
-            <!--<name>treemap-datalet</name>-->
-            <!--<type>treemap</type>-->
-            <!--<idm>-->
-            <!--</idm>-->
-        <!--</component>-->
-
-        <!--map-->
+        <!--bubble-->
         <component>
-            <name>leafletjs-datalet</name>
-            <type>map</type>
+            <name>bubblechart-datalet</name>
+            <type>bubble</type>
             <idm>
                 <inputs>
                     <input>
-                        <name>Latitude</name>
-                        <description>LatitudeDescription</description>
+                        <name>NumericXAxis</name>
+                        <description>XAxisDescription</description>
                     </input>
                     <input>
-                        <name>Longitude</name>
-                        <description>LongitudeDescription</description>
+                        <name>NumericYAxis</name>
+                        <description>YAxisDescription</description>
                     </input>
                     <input>
-                        <name>BalloonContent</name>
-                        <description>BalloonContentDescription</description>
-                        <selection>*</selection>
+                        <name>BubbleSize</name>
+                        <description>BubbleSizeDescription</description>
+                    </input>
+                    <input>
+                        <name>BubbleContent</name>
+                        <description>BubbleContentDescription</description>
+                    </input>
+                    <input>
+                        <name>Categories</name>
+                        <description>CategoriesDescription</description>
+                        <selection>?</selection>
+                    </input>
+                    <layouts>
+                        <input>
+                            <name>x-axis-label</name>
+                            <description>XAxisLabelDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>y-axis-label</name>
+                            <description>YAxisLabelDescription</description>
+                            <type>text</type>
+                        </input>
+                        <input>
+                            <name>theme</name>
+                            <description>themeDescription</description>
+                            <type>list</type>
+                            <list>
+                                <item>themeBase</item>
+                                <item>themeDarkUnika</item>
+                                <item>themeSandSignika</item>
+                                <item>themeGridLight</item>
+                                <item>themeSpod</item>
+                            </list>
+                        </input>
+                    </layouts>
+                </inputs>
+            </idm>
+        </component>
+
+        <!--treemap-->
+        <component>
+            <name>treemap-datalet</name>
+            <type>treemap</type>
+            <idm>
+                <inputs>
+                    <input>
+                        <name>Level</name>
+                        <description>LevelDescription</description>
+                        <selection>+</selection>
                     </input>
                     <layouts>
                     </layouts>
