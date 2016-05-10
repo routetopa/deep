@@ -45,9 +45,26 @@ class DeepExport
                     $rtf = new PHPRtfLite();
 
                     $sect = $rtf->addSection();
-                    $sect->writeText($_REQUEST["datalet"], new PHPRtfLite_Font(14), new PHPRtfLite_ParFormat('center'));
+
+                    if(!empty($_REQUEST["name"]))
+                        $sect->writeText("Dataset name : " . strip_tags($_REQUEST["name"]), new PHPRtfLite_Font(14), new PHPRtfLite_ParFormat('center'));
+
+                    if(!empty($_REQUEST["datalet"]))
+                        $sect->writeText("Datalet name : " . strip_tags($_REQUEST["datalet"]), new PHPRtfLite_Font(14), new PHPRtfLite_ParFormat('center'));
+
                     $sect->addImageFromString($this->createImage($this->app->request()->params('svg_data')), PHPRtfLite_Image::TYPE_PNG);
-                    $sect->writeText($_REQUEST["dataset"], new PHPRtfLite_Font(14), new PHPRtfLite_ParFormat('center'));
+
+                    if(!empty($_REQUEST["description"]))
+                        $sect->writeText("Dataset description : " . strip_tags($_REQUEST["description"]), new PHPRtfLite_Font(14), new PHPRtfLite_ParFormat('center'));
+                    if(!empty($_REQUEST["created"]))
+                        $sect->writeText("Dataset creation date : " . strip_tags($_REQUEST["created"]), new PHPRtfLite_Font(14), new PHPRtfLite_ParFormat('center'));
+                    if(!empty($_REQUEST["format"]))
+                        $sect->writeText("Dataset format : " . strip_tags($_REQUEST["format"]), new PHPRtfLite_Font(14), new PHPRtfLite_ParFormat('center'));
+                    if(!empty($_REQUEST["lastModified"]))
+                        $sect->writeText("Dataset last modified : " . strip_tags($_REQUEST["lastModified"]), new PHPRtfLite_Font(14), new PHPRtfLite_ParFormat('center'));
+
+                    if(!empty($_REQUEST["dataset"]))
+                        $sect->writeText("Dataset link : " . strip_tags($_REQUEST["dataset"]), new PHPRtfLite_Font(14), new PHPRtfLite_ParFormat('center'));
                     // save rtf document
                     
                     $rtf->sendRtf('datalet.rtf');
