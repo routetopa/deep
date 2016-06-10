@@ -22,5 +22,8 @@
         <component>
             <name>data-sevc-controllet</name>
         </component>
+        <component>
+            <name>datalets-modifier-controllet</name>
+        </component>
     </components>
 </handler_configuration>
