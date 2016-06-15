@@ -31,9 +31,5 @@
 
  */
 
-
-require 'DEEP.php';
-
-DEEP::getInstance()->run();
-
-?>
+require 'deepexport.php';
+DeepExport::getInstance()->run();
