@@ -14,6 +14,7 @@
                     <input>
                         <name>Column</name>
                         <description>ColumnDescription</description>
+                        <type>TEXT</type>
                         <selection>+</selection>
                     </input>
                     <layouts>
@@ -31,21 +32,27 @@
                     <input>
                         <name>SliceLabels</name>
                         <description>SliceLabelsDescription</description>
+                        <type>TEXT</type>
+                        <selection>1</selection>
                     </input>
                     <input>
                         <name>SliceSizes</name>
                         <description>SliceSizesDescription</description>
+                        <type>NUMBER</type>
+                        <selection>1</selection>
                     </input>
                     <layouts>
                         <input>
                             <name>suffix</name>
                             <description>suffixDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>theme</name>
                             <description>themeDescription</description>
-                            <type>list</type>
+                            <type>LIST</type>
+                            <selection>1</selection>
                             <list>
                                 <item>themeBase</item>
                                 <item>themeDarkUnika</item>
@@ -57,7 +64,8 @@
                         <input>
                             <name>donut</name>
                             <description>donutDescription</description>
-                            <type>list</type>
+                            <type>LIST</type>
+                            <selection>1</selection>
                             <list>
                                 <item>false</item>
                                 <item>true</item>
@@ -73,37 +81,45 @@
         <!--column-->
         <component>
             <name>columnchart-datalet</name>
-            <type>multiseries</type>
+            <type>multiseries2</type>
             <idm>
                 <inputs>
                     <input>
                         <name>XAxis</name>
                         <description>XAxisDescription</description>
+                        <type>TEXT</type>
+                        <selection>1</selection>
                     </input>
                     <input>
                         <name>NumericYAxis</name>
                         <description>YAxisDescription</description>
+                        <type>NUMBER</type>
+                        <selection>*</selection>
                     </input>
                     <layouts>
                         <input>
                             <name>x-axis-label</name>
                             <description>XAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>y-axis-label</name>
                             <description>YAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>suffix</name>
                             <description>suffixDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>theme</name>
                             <description>themeDescription</description>
-                            <type>list</type>
+                            <type>LIST</type>
+                            <selection>1</selection>
                             <list>
                                 <item>themeBase</item>
                                 <item>themeDarkUnika</item>
@@ -119,37 +135,45 @@
         <!--bar-->
         <component>
             <name>barchart-datalet</name>
-            <type>multiseries</type>
+            <type>multiseries2</type>
             <idm>
                 <inputs>
                     <input>
                         <name>XAxis</name>
                         <description>XAxisDescription</description>
+                        <type>TEXT</type>
+                        <selection>1</selection>
                     </input>
                     <input>
                         <name>NumericYAxis</name>
                         <description>YAxisDescription</description>
+                        <type>NUMBER</type>
+                        <selection>*</selection>
                     </input>
                     <layouts>
                         <input>
                             <name>x-axis-label</name>
                             <description>XAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>y-axis-label</name>
                             <description>YAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>suffix</name>
                             <description>suffixDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>theme</name>
                             <description>themeDescription</description>
-                            <type>list</type>
+                            <type>LIST</type>
+                            <selection>1</selection>
                             <list>
                                 <item>themeBase</item>
                                 <item>themeDarkUnika</item>
@@ -165,37 +189,45 @@
         <!--area-->
         <component>
             <name>areachart-datalet</name>
-            <type>multiseries</type>
+            <type>multiseries2</type>
             <idm>
                 <inputs>
                     <input>
                         <name>XAxis</name>
                         <description>XAxisDescription</description>
+                        <type>TEXT</type>
+                        <selection>1</selection>
                     </input>
                     <input>
                         <name>NumericYAxis</name>
                         <description>YAxisDescription</description>
+                        <type>NUMBER</type>
+                        <selection>*</selection>
                     </input>
                     <layouts>
                         <input>
                             <name>x-axis-label</name>
                             <description>XAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>y-axis-label</name>
                             <description>YAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>suffix</name>
                             <description>suffixDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>theme</name>
                             <description>themeDescription</description>
-                            <type>list</type>
+                            <type>LIST</type>
+                            <selection>1</selection>
                             <list>
                                 <item>themeBase</item>
                                 <item>themeDarkUnika</item>
@@ -211,37 +243,45 @@
         <!--line-->
         <component>
             <name>linechart-datalet</name>
-            <type>multiseries</type>
+            <type>multiseries2</type>
             <idm>
                 <inputs>
                     <input>
                         <name>XAxis</name>
                         <description>XAxisDescription</description>
+                        <type>TEXT</type>
+                        <selection>1</selection>
                     </input>
                     <input>
                         <name>NumericYAxis</name>
                         <description>YAxisDescription</description>
+                        <type>NUMBER</type>
+                        <selection>*</selection>
                     </input>
                     <layouts>
                         <input>
                             <name>x-axis-label</name>
                             <description>XAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>y-axis-label</name>
                             <description>YAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>suffix</name>
                             <description>suffixDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>theme</name>
                             <description>themeDescription</description>
-                            <type>list</type>
+                            <type>LIST</type>
+                            <selection>1</selection>
                             <list>
                                 <item>themeBase</item>
                                 <item>themeDarkUnika</item>
@@ -257,37 +297,45 @@
         <!--heatmap-->
         <component>
             <name>heatmap-datalet</name>
-            <type>multiseries</type>
+            <type>multiseries2</type>
             <idm>
                 <inputs>
                     <input>
                         <name>XAxis</name>
                         <description>XAxisDescription</description>
+                        <type>TEXT</type>
+                        <selection>1</selection>
                     </input>
                     <input>
                         <name>NumericYAxis</name>
                         <description>YAxisDescription</description>
+                        <type>NUMBER</type>
+                        <selection>*</selection>
                     </input>
                     <layouts>
                         <input>
                             <name>x-axis-label</name>
                             <description>XAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>y-axis-label</name>
                             <description>YAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>suffix</name>
                             <description>suffixDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>theme</name>
                             <description>themeDescription</description>
-                            <type>list</type>
+                            <type>LIST</type>
+                            <selection>1</selection>
                             <list>
                                 <item>themeBase</item>
                                 <item>themeDarkUnika</item>
@@ -312,31 +360,39 @@
                     <input>
                         <name>XAxis</name>
                         <description>XAxisDescription</description>
+                        <type>TEXT</type>
+                        <selection>1</selection>
                     </input>
                     <input>
                         <name>NumericYAxis</name>
                         <description>YAxisDescription</description>
+                        <type>NUMBER</type>
+                        <selection>1</selection>
                     </input>
                     <layouts>
                         <input>
                             <name>x-axis-label</name>
                             <description>XAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>y-axis-label</name>
                             <description>YAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>suffix</name>
                             <description>suffixDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>theme</name>
                             <description>themeDescription</description>
-                            <type>list</type>
+                            <type>LIST</type>
+                            <selection>1</selection>
                             <list>
                                 <item>themeBase</item>
                                 <item>themeDarkUnika</item>
@@ -348,7 +404,8 @@
                         <input>
                             <name>stack</name>
                             <description>stackDescription</description>
-                            <type>list</type>
+                            <type>LIST</type>
+                            <selection>1</selection>
                             <list>
                                 <item>normal</item>
                                 <item>percent</item>
@@ -367,31 +424,39 @@
                     <input>
                         <name>XAxis</name>
                         <description>XAxisDescription</description>
+                        <type>TEXT</type>
+                        <selection>1</selection>
                     </input>
                     <input>
                         <name>NumericYAxis</name>
                         <description>YAxisDescription</description>
+                        <type>NUMBER</type>
+                        <selection>1</selection>
                     </input>
                     <layouts>
                         <input>
                             <name>x-axis-label</name>
                             <description>XAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>y-axis-label</name>
                             <description>YAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>suffix</name>
                             <description>suffixDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>theme</name>
                             <description>themeDescription</description>
-                            <type>list</type>
+                            <type>LIST</type>
+                            <selection>1</selection>
                             <list>
                                 <item>themeBase</item>
                                 <item>themeDarkUnika</item>
@@ -403,7 +468,8 @@
                         <input>
                             <name>stack</name>
                             <description>stackDescription</description>
-                            <type>list</type>
+                            <type>LIST</type>
+                            <selection>1</selection>
                             <list>
                                 <item>normal</item>
                                 <item>percent</item>
@@ -422,31 +488,39 @@
                     <input>
                         <name>XAxis</name>
                         <description>XAxisDescription</description>
+                        <type>TEXT</type>
+                        <selection>1</selection>
                     </input>
                     <input>
                         <name>NumericYAxis</name>
                         <description>YAxisDescription</description>
+                        <type>NUMBER</type>
+                        <selection>1</selection>
                     </input>
                     <layouts>
                         <input>
                             <name>x-axis-label</name>
                             <description>XAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>y-axis-label</name>
                             <description>YAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>suffix</name>
                             <description>suffixDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>theme</name>
                             <description>themeDescription</description>
-                            <type>list</type>
+                            <type>LIST</type>
+                            <selection>1</selection>
                             <list>
                                 <item>themeBase</item>
                                 <item>themeDarkUnika</item>
@@ -458,7 +532,8 @@
                         <input>
                             <name>stack</name>
                             <description>stackDescription</description>
-                            <type>list</type>
+                            <type>LIST</type>
+                            <selection>1</selection>
                             <list>
                                 <item>normal</item>
                                 <item>percent</item>
@@ -478,14 +553,21 @@
                     <input>
                         <name>Latitude</name>
                         <description>LatitudeDescription</description>
+                        <!--<type>GEOGRAPHICAL COORDINATE</type>-->
+                        <type>NUMBER</type>
+                        <selection>1</selection>
                     </input>
                     <input>
                         <name>Longitude</name>
                         <description>LongitudeDescription</description>
+                        <!--<type>GEOGRAPHICAL COORDINATE</type>-->
+                        <type>NUMBER</type>
+                        <selection>1</selection>
                     </input>
                     <input>
                         <name>BalloonContent</name>
                         <description>BalloonContentDescription</description>
+                        <type>TEXT</type>
                         <selection>*</selection>
                     </input>
                     <layouts>
@@ -503,31 +585,39 @@
                     <input>
                         <name>NumericXAxis</name>
                         <description>XAxisDescription</description>
+                        <type>NUMBER</type>
+                        <selection>1</selection>
                     </input>
                     <input>
                         <name>NumericYAxis</name>
                         <description>YAxisDescription</description>
+                        <type>NUMBER</type>
+                        <selection>1</selection>
                     </input>
                     <input>
                         <name>Categories</name>
                         <description>CategoriesDescription</description>
+                        <type>TEXT</type>
                         <selection>?</selection>
                     </input>
                     <layouts>
                         <input>
                             <name>x-axis-label</name>
                             <description>XAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>y-axis-label</name>
                             <description>YAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>theme</name>
                             <description>themeDescription</description>
-                            <type>list</type>
+                            <type>LIST</type>
+                            <selection>1</selection>
                             <list>
                                 <item>themeBase</item>
                                 <item>themeDarkUnika</item>
@@ -550,39 +640,51 @@
                     <input>
                         <name>NumericXAxis</name>
                         <description>XAxisDescription</description>
+                        <type>NUMBER</type>
+                        <selection>1</selection>
                     </input>
                     <input>
                         <name>NumericYAxis</name>
                         <description>YAxisDescription</description>
+                        <type>NUMBER</type>
+                        <selection>1</selection>
                     </input>
                     <input>
                         <name>BubbleSize</name>
                         <description>BubbleSizeDescription</description>
+                        <type>NUMBER</type>
+                        <selection>?</selection>
                     </input>
                     <input>
                         <name>BubbleContent</name>
                         <description>BubbleContentDescription</description>
+                        <type>TEXT</type>
+                        <selection>?</selection>
                     </input>
                     <input>
                         <name>Categories</name>
                         <description>CategoriesDescription</description>
+                        <type>TEXT</type>
                         <selection>?</selection>
                     </input>
                     <layouts>
                         <input>
                             <name>x-axis-label</name>
                             <description>XAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>y-axis-label</name>
                             <description>YAxisLabelDescription</description>
-                            <type>text</type>
+                            <type>TEXT</type>
+                            <selection>1</selection>
                         </input>
                         <input>
                             <name>theme</name>
                             <description>themeDescription</description>
-                            <type>list</type>
+                            <type>LIST</type>
+                            <selection>1</selection>
                             <list>
                                 <item>themeBase</item>
                                 <item>themeDarkUnika</item>
@@ -605,6 +707,7 @@
                     <input>
                         <name>Level</name>
                         <description>LevelDescription</description>
+                        <type>TEXT</type>
                         <selection>+</selection>
                     </input>
                     <layouts>
@@ -622,10 +725,14 @@
                     <input>
                         <name>url</name>
                         <description></description>
+                        <type>TEXT</type>
+                        <selection>1</selection>
                     </input>
                     <input>
                         <name>data-url</name>
                         <description></description>
+                        <type>TEXT</type>
+                        <selection>1</selection>
                     </input>
                     <layouts>
                     </layouts>

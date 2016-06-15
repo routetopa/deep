@@ -4,7 +4,7 @@
 <!ELEMENT idm (inputs*)>
 <!ELEMENT inputs (input*, layouts)>
 <!ELEMENT layouts (input*)>
-<!ELEMENT input (name, description?, selection?, type?, validator?, list?)>
+<!ELEMENT input (name, description?, type, selection, validator?, list?)>
 <!ELEMENT list (item+)>
 <!ELEMENT item (#PCDATA)>
 <!ELEMENT name (#PCDATA)>
