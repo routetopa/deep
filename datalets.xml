@@ -576,6 +576,24 @@
             </idm>
         </component>
 
+        <!--map-->
+        <component>
+            <name>leafletjs-geojson-datalet</name>
+            <type>map-geojson</type>
+            <idm>
+                <inputs>
+                    <input>
+                        <name>GEOJSON</name>
+                        <description>GEOJSONDescription</description>
+                        <type>GEOJSON</type>
+                        <selection>1</selection>
+                    </input>
+                    <layouts>
+                    </layouts>
+                </inputs>
+            </idm>
+        </component>
+
         <!--scatter-->
         <component>
             <name>scatterchart-datalet</name>
