@@ -588,6 +588,12 @@
                         <type>GEOJSON</type>
                         <selection>1</selection>
                     </input>
+                    <input>
+                        <name>BalloonContent</name>
+                        <description>BalloonContentDescription</description>
+                        <type>TEXT</type>
+                        <selection>*</selection>
+                    </input>
                     <layouts>
                     </layouts>
                 </inputs>
