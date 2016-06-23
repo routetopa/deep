@@ -56,15 +56,28 @@ class DeepExport
 
                     if(!empty($_REQUEST["description"]))
                         $sect->writeText("Dataset description : " . strip_tags($_REQUEST["description"]), new PHPRtfLite_Font(14), new PHPRtfLite_ParFormat('center'));
+
                     if(!empty($_REQUEST["created"]))
                         $sect->writeText("Dataset creation date : " . strip_tags($_REQUEST["created"]), new PHPRtfLite_Font(14), new PHPRtfLite_ParFormat('center'));
+
                     if(!empty($_REQUEST["format"]))
                         $sect->writeText("Dataset format : " . strip_tags($_REQUEST["format"]), new PHPRtfLite_Font(14), new PHPRtfLite_ParFormat('center'));
+
                     if(!empty($_REQUEST["lastModified"]))
                         $sect->writeText("Dataset last modified : " . strip_tags($_REQUEST["lastModified"]), new PHPRtfLite_Font(14), new PHPRtfLite_ParFormat('center'));
 
                     if(!empty($_REQUEST["dataset"]))
                         $sect->writeText("Dataset link : " . strip_tags($_REQUEST["dataset"]), new PHPRtfLite_Font(14), new PHPRtfLite_ParFormat('center'));
+
+                    if(!empty($_REQUEST["timestamp"]))
+                        $sect->writeText("Datalet added on : " . strip_tags($_REQUEST["timestamp"]), new PHPRtfLite_Font(14), new PHPRtfLite_ParFormat('center'));
+
+                    if(!empty($_REQUEST["user"]))
+                        $sect->writeText("Datalet created by : " . strip_tags($_REQUEST["user"]), new PHPRtfLite_Font(14), new PHPRtfLite_ParFormat('center'));
+
+                    if(!empty($_REQUEST["comment"]))
+                        $sect->writeText("Datalet comment : " . strip_tags($_REQUEST["comment"]), new PHPRtfLite_Font(14), new PHPRtfLite_ParFormat('center'));
+
                     // save rtf document
                     
                     $rtf->sendRtf('datalet.rtf');
