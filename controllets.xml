@@ -20,6 +20,9 @@
             </attributes>
         </component>
         <component>
+            <name>select-marker-map-controllet</name>
+        </component>
+        <component>
             <name>data-sevc-controllet</name>
         </component>
         <component>
