@@ -741,14 +741,14 @@
                         <name>Latitude</name>
                         <description>LatitudeDescription</description>
                         <!--<type>GEOCOORDINATE</type>-->
-                        <type>NUMBER</type>
+                        <type>TEXT</type>
                         <selection>1</selection>
                     </input>
                     <input>
                         <name>Longitude</name>
                         <description>LongitudeDescription</description>
                         <!--<type>GEOCOORDINATE</type>-->
-                        <type>NUMBER</type>
+                        <type>TEXT</type>
                         <selection>1</selection>
                     </input>
                     <input>
