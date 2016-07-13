@@ -2,7 +2,7 @@
 <!ELEMENT components (component*)>
 <!ELEMENT component (name, type, idm)>
 <!ELEMENT idm (inputs*)>
-<!ELEMENT inputs (input*, layouts)>
+<!ELEMENT inputs (input*, layouts?)>
 <!ELEMENT layouts (input*)>
 <!ELEMENT input (name, description?, type, selection, validator?, list?)>
 <!ELEMENT list (item+)>
@@ -12,3 +12,5 @@
 <!ELEMENT selection (#PCDATA)>
 <!ELEMENT type (#PCDATA)>
 <!ELEMENT validator (#PCDATA)>
+
+<!--selection * ? n-->
