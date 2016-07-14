@@ -730,7 +730,6 @@
             </idm>
         </component>
 
-        <!--https://leaflet-extras.github.io/leaflet-providers/preview/-->
         <!--map-->
         <component>
             <name>leafletjs-datalet</name>
@@ -740,14 +739,12 @@
                     <input>
                         <name>Latitude</name>
                         <description>LatitudeDescription</description>
-                        <!--<type>GEOCOORDINATE</type>-->
                         <type>TEXT</type>
                         <selection>1</selection>
                     </input>
                     <input>
                         <name>Longitude</name>
                         <description>LongitudeDescription</description>
-                        <!--<type>GEOCOORDINATE</type>-->
                         <type>TEXT</type>
                         <selection>1</selection>
                     </input>
@@ -770,13 +767,12 @@
                     <input>
                         <name>GEOJSON</name>
                         <description>GEOJSONDescription</description>
-                        <!--<type>GEOJSON</type>-->
                         <type>TEXT</type>
                         <selection>1</selection>
                     </input>
                     <input>
-                        <name>BalloonContent</name>
-                        <description>BalloonContentDescription</description>
+                        <name>GEOJSONContent</name>
+                        <description>GEOJSONContentDescription</description>
                         <type>TEXT</type>
                         <selection>*</selection>
                     </input>
