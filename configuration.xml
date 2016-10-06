@@ -1,11 +1,11 @@
 <configuration>
 
     <deep_datalet_configuration>
-        <components_repository_url_reference>http://192.168.164.128/deep/COMPONENTS/datalets/</components_repository_url_reference>
+        <components_repository_url_reference>http://YOUR_INSTALLATION_URL/deep/COMPONENTS/datalets/</components_repository_url_reference>
     </deep_datalet_configuration>
 
     <deep_controllets_configuration>
-        <components_repository_url_reference>http://192.168.164.128/deep/COMPONENTS/controllets/</components_repository_url_reference>
+        <components_repository_url_reference>http://YOUR_INSTALLATION_URL/deep/COMPONENTS/controllets/</components_repository_url_reference>
     </deep_controllets_configuration>
 
 </configuration>
