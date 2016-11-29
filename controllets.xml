@@ -31,5 +31,8 @@
         <component>
             <name>co-datalets-creator-controllet</name>
         </component>
+        <component>
+            <name>map-controllet</name>
+        </component>
     </components>
 </handler_configuration>
