@@ -484,23 +484,23 @@
                                 <item>percent</item>
                             </list>
                         </input>
-                        <input>
-                            <name>theme</name>
-                            <description>themeDescription</description>
-                            <type>LIST</type>
-                            <selection>1</selection>
-                            <list>
-                                <item>themeBase</item>
-                                <item>themeDarkGreen</item>
-                                <item>themeDarkBlue</item>
-                                <item>themeDarkUnica</item>
-                                <item>themeGray</item>
-                                <item>themeGrid</item>
-                                <item>themeGridLight</item>
-                                <item>themeSandSignika</item>
-                                <item>themeSkies</item>
-                            </list>
-                        </input>
+                        <!--<input>-->
+                            <!--<name>theme</name>-->
+                            <!--<description>themeDescription</description>-->
+                            <!--<type>LIST</type>-->
+                            <!--<selection>1</selection>-->
+                            <!--<list>-->
+                                <!--<item>themeBase</item>-->
+                                <!--<item>themeDarkGreen</item>-->
+                                <!--<item>themeDarkBlue</item>-->
+                                <!--<item>themeDarkUnica</item>-->
+                                <!--<item>themeGray</item>-->
+                                <!--<item>themeGrid</item>-->
+                                <!--<item>themeGridLight</item>-->
+                                <!--<item>themeSandSignika</item>-->
+                                <!--<item>themeSkies</item>-->
+                            <!--</list>-->
+                        <!--</input>-->
                     </layouts>
                 </inputs>
             </idm>
