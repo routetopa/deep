@@ -458,8 +458,8 @@
                             <type>LIST</type>
                             <selection>1</selection>
                             <list>
-                                <item>topRight</item>
                                 <item>bottom</item>
+                                <item>topRight</item>
                                 <item>false</item>
                             </list>
                         </input>
