@@ -762,6 +762,80 @@
             </idm>
         </component>
 
+        <!--timeline-->
+        <component>
+            <name>timeline-datalet</name>
+            <type>timeline</type>
+            <idm>
+                <inputs>
+                    <input>
+                        <name>StartDate</name>
+                        <description>StartDateDescription</description>
+                        <type>TEXT</type>
+                        <selection>1</selection>
+                    </input>
+                    <input>
+                        <name>EndDate</name>
+                        <description>EndDateDescription</description>
+                        <type>TEXT</type>
+                        <selection>1</selection>
+                    </input>
+                    <input>
+                        <name>EventTitle</name>
+                        <description>EventTitleDescription</description>
+                        <type>TEXT</type>
+                        <selection>1</selection>
+                    </input>
+                    <input>
+                        <name>EventDescription</name>
+                        <description>EventDescriptionDescription</description>
+                        <type>TEXT</type>
+                        <selection>?</selection>
+                    </input>
+                    <input>
+                        <name>MediaUrl</name>
+                        <description>MediaUrlDescription</description>
+                        <type>TEXT</type>
+                        <selection>?</selection>
+                    </input>
+                    <input>
+                        <name>Background</name>
+                        <description>BackgroundDescription</description>
+                        <type>TEXT</type>
+                        <selection>?</selection>
+                    </input>
+                </inputs>
+            </idm>
+        </component>
+
+        <!--mediaslider-->
+        <component>
+            <name>mediaslider-datalet</name>
+            <type>mediaslider</type>
+            <idm>
+                <inputs>
+                    <input>
+                        <name>MediaUrl</name>
+                        <description>MediaUrlDescription</description>
+                        <type>TEXT</type>
+                        <selection>1</selection>
+                    </input>
+                    <input>
+                        <name>MediaTitle</name>
+                        <description>MediaTitleDescription</description>
+                        <type>TEXT</type>
+                        <selection>?</selection>
+                    </input>
+                    <input>
+                        <name>MediaDescription</name>
+                        <description>MediaUrlDescriptionDescription</description>
+                        <type>TEXT</type>
+                        <selection>?</selection>
+                    </input>
+                </inputs>
+            </idm>
+        </component>
+
         <!--map-->
         <component>
             <name>leafletjs-datalet</name>
