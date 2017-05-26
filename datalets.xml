@@ -832,6 +832,45 @@
                         <type>TEXT</type>
                         <selection>?</selection>
                     </input>
+                    <layouts>
+                        <input>
+                            <name>animation</name>
+                            <description>animationDescription</description>
+                            <type>LIST</type>
+                            <selection>1</selection>
+                            <list>
+                                <item>random</item>
+                                <item>simpleFade</item>
+                                <item>curtainTopLeft</item>
+                                <item>curtainTopRight</item>
+                                <item>curtainBottomLeft</item>
+                                <item>curtainBottomRight</item>
+                                <item>curtainSliceLeft</item>
+                                <item>curtainSliceRight</item>
+                                <item>blindCurtainTopLeft</item>
+                                <item>blindCurtainTopRight</item>
+                                <item>blindCurtainBottomLeft</item>
+                                <item>blindCurtainBottomRight</item>
+                                <item>blindCurtainSliceBottom</item>
+                                <item>blindCurtainSliceTop</item>
+                                <item>stampede</item>
+                                <item>mosaic</item>
+                                <item>mosaicReverse</item>
+                                <item>mosaicRandom</item>
+                                <item>mosaicSpiral</item>
+                                <item>mosaicSpiralReverse</item>
+                                <item>topLeftBottomRight</item>
+                                <item>bottomRightTopLeft</item>
+                                <item>bottomLeftTopRight</item>
+                                <item>bottomLeftTopRight</item>
+                                <item>scrollLeft</item>
+                                <item>scrollRight</item>
+                                <item>scrollHorz</item>
+                                <item>scrollBottom</item>
+                                <item>scrollTop</item>
+                            </list>
+                        </input>
+                    </layouts>
                 </inputs>
             </idm>
         </component>
