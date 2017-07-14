@@ -925,26 +925,34 @@
             </idm>
         </component>
 
-        <!--preview HIDDEN-->
+        <!--preview link HIDDEN-->
+        <component>
+            <name>preview-link</name>
+            <type>hidden</type>
+            <idm>
+                <inputs>
+                    <input>
+                        <name></name>
+                        <description></description>
+                        <type></type>
+                        <selection></selection>
+                    </input>
+                </inputs>
+            </idm>
+        </component>
+
+        <!-- preview datalet HIDDEN -->
         <component>
             <name>preview-datalet</name>
             <type>hidden</type>
             <idm>
                 <inputs>
                     <input>
-                        <name>url</name>
+                        <name></name>
                         <description></description>
-                        <type>TEXT</type>
-                        <selection>1</selection>
+                        <type></type>
+                        <selection></selection>
                     </input>
-                    <input>
-                        <name>data-url</name>
-                        <description></description>
-                        <type>TEXT</type>
-                        <selection>1</selection>
-                    </input>
-                    <layouts>
-                    </layouts>
                 </inputs>
             </idm>
         </component>
