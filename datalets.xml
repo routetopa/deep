@@ -804,6 +804,18 @@
                         <type>TEXT</type>
                         <selection>?</selection>
                     </input>
+                    <layouts>
+                        <input>
+                            <name>date-format</name>
+                            <description>dateFormatDescription</description>
+                            <type>LIST</type>
+                            <selection>1</selection>
+                            <list>
+                                <item>MDY</item>
+                                <item>DMY</item>
+                            </list>
+                        </input>
+                    </layouts>
                 </inputs>
             </idm>
         </component>
