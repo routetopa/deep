@@ -911,6 +911,12 @@
                         <type>TEXT</type>
                         <selection>*</selection>
                     </input>
+                    <input>
+                        <name>Categories</name>
+                        <description>CategoriesDescription</description>
+                        <type>TEXT</type>
+                        <selection>?</selection>
+                    </input>
                 </inputs>
             </idm>
         </component>
