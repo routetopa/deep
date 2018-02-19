@@ -790,7 +790,7 @@
                         <name>EventDescription</name>
                         <description>EventDescriptionDescription</description>
                         <type>TEXT</type>
-                        <selection>?</selection>
+                        <selection>*</selection>
                     </input>
                     <input>
                         <name>MediaUrl</name>
@@ -886,6 +886,40 @@
                 </inputs>
             </idm>
         </component>
+
+        <!--audioslider-->
+        <!--<component>-->
+            <!--<name>audioslider-datalet</name>-->
+            <!--<type>audioslider</type>-->
+            <!--<idm>-->
+                <!--<inputs>-->
+                    <!--<input>-->
+                        <!--<name>AudioUrl</name>-->
+                        <!--<description>AudioUrlDescription</description>-->
+                        <!--<type>TEXT</type>-->
+                        <!--<selection>1</selection>-->
+                    <!--</input>-->
+                    <!--<input>-->
+                        <!--<name>AudioTiming</name>-->
+                        <!--<description>AudioTimingDescription</description>-->
+                        <!--<type>NUMBER</type>-->
+                        <!--<selection>?</selection>-->
+                    <!--</input>-->
+                    <!--<input>-->
+                        <!--<name>ImageUrl</name>-->
+                        <!--<description>ImageUrlDescription</description>-->
+                        <!--<type>TEXT</type>-->
+                        <!--<selection>?</selection>-->
+                    <!--</input>-->
+                    <!--<input>-->
+                        <!--<name>AudioDescription</name>-->
+                        <!--<description>AudioDescriptionDescription</description>-->
+                        <!--<type>TEXT</type>-->
+                        <!--<selection>?</selection>-->
+                    <!--</input>-->
+                <!--</inputs>-->
+            <!--</idm>-->
+        <!--</component>-->
 
         <!--map-->
         <component>
@@ -1006,7 +1040,6 @@
                 </inputs>
             </idm>
         </component>
-
 
     </components>
 </handler_configuration>
