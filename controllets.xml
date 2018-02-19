@@ -34,5 +34,16 @@
         <component>
             <name>map-controllet</name>
         </component>
+        <component>
+            <name>import-dataset-controllet</name>
+        </component>
+
+        <component>
+            <name>splod-controllet</name>
+        </component>
+        <component>
+            <name>splod-visualization-controllet</name>
+        </component>
+
     </components>
 </handler_configuration>
