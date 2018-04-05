@@ -888,38 +888,38 @@
         </component>
 
         <!--audioslider-->
-        <!--<component>-->
-            <!--<name>audioslider-datalet</name>-->
-            <!--<type>audioslider</type>-->
-            <!--<idm>-->
-                <!--<inputs>-->
-                    <!--<input>-->
-                        <!--<name>AudioUrl</name>-->
-                        <!--<description>AudioUrlDescription</description>-->
-                        <!--<type>TEXT</type>-->
-                        <!--<selection>1</selection>-->
-                    <!--</input>-->
-                    <!--<input>-->
-                        <!--<name>AudioTiming</name>-->
-                        <!--<description>AudioTimingDescription</description>-->
-                        <!--<type>NUMBER</type>-->
-                        <!--<selection>?</selection>-->
-                    <!--</input>-->
-                    <!--<input>-->
-                        <!--<name>ImageUrl</name>-->
-                        <!--<description>ImageUrlDescription</description>-->
-                        <!--<type>TEXT</type>-->
-                        <!--<selection>?</selection>-->
-                    <!--</input>-->
-                    <!--<input>-->
-                        <!--<name>AudioDescription</name>-->
-                        <!--<description>AudioDescriptionDescription</description>-->
-                        <!--<type>TEXT</type>-->
-                        <!--<selection>?</selection>-->
-                    <!--</input>-->
-                <!--</inputs>-->
-            <!--</idm>-->
-        <!--</component>-->
+        <component>
+            <name>audioslider-datalet</name>
+            <type>audioslider</type>
+            <idm>
+                <inputs>
+                    <input>
+                        <name>AudioUrl</name>
+                        <description>AudioUrlDescription</description>
+                        <type>TEXT</type>
+                        <selection>1</selection>
+                    </input>
+                    <input>
+                        <name>AudioTiming</name>
+                        <description>AudioTimingDescription</description>
+                        <type>NUMBER</type>
+                        <selection>?</selection>
+                    </input>
+                    <input>
+                        <name>ImageUrl</name>
+                        <description>ImageUrlDescription</description>
+                        <type>TEXT</type>
+                        <selection>?</selection>
+                    </input>
+                    <input>
+                        <name>AudioDescription</name>
+                        <description>AudioDescriptionDescription</description>
+                        <type>TEXT</type>
+                        <selection>?</selection>
+                    </input>
+                </inputs>
+            </idm>
+        </component>
 
         <!--map-->
         <component>
@@ -1037,6 +1037,92 @@
                         <type></type>
                         <selection></selection>
                     </input>
+                </inputs>
+            </idm>
+        </component>
+
+        <!-- italy map -->
+        <component>
+            <name>italymap-datalet</name>
+            <type>italymap</type>
+            <idm>
+                <inputs>
+                    <input>
+                        <name>Area</name>
+                        <description>AreaDescription</description>
+                        <type>TEXT</type>
+                        <selection>1</selection>
+                    </input>
+                    <input>
+                        <name>Value</name>
+                        <description>ValueDescription</description>
+                        <type>NUMBER</type>
+                        <selection>1</selection>
+                    </input>
+                    <input>
+                        <name>TooltipContent</name>
+                        <description>TooltipContentDescription</description>
+                        <type>TEXT</type>
+                        <selection>*</selection>
+                    </input>
+                    <layouts>
+                        <input>
+                            <name>map</name>
+                            <description>mapDescription</description>
+                            <type>LIST</type>
+                            <selection>1</selection>
+                            <list>
+                                <item>1_italyRegion</item>
+                                <item>2_italyProvince</item>
+                                <item>3_campaniaProvince</item>
+                                <item>4_campaniaMunicipality</item>
+                            </list>
+                        </input>
+                        <input>
+                            <name>suffix</name>
+                            <description>suffixDescription</description>
+                            <type>TEXT</type>
+                            <selection>1</selection>
+                        </input>
+                        <input>
+                            <name>legend</name>
+                            <description>dataLabelsDescription</description>
+                            <type>LIST</type>
+                            <selection>1</selection>
+                            <list>
+                                <item>bottom</item>
+                                <item>topRight</item>
+                                <item>false</item>
+                            </list>
+                        </input>
+                        <input>
+                            <name>data-labels</name>
+                            <description>dataLabelsDescription</description>
+                            <type>LIST</type>
+                            <selection>1</selection>
+                            <list>
+                                <item>true</item>
+                                <item>false</item>
+                            </list>
+                        </input>
+                        <input>
+                            <name>theme</name>
+                            <description>themeDescription</description>
+                            <type>LIST</type>
+                            <selection>1</selection>
+                            <list>
+                                <item>themeBase</item>
+                                <item>themeDarkGreen</item>
+                                <item>themeDarkBlue</item>
+                                <item>themeDarkUnica</item>
+                                <item>themeGray</item>
+                                <item>themeGrid</item>
+                                <item>themeGridLight</item>
+                                <item>themeSandSignika</item>
+                                <item>themeSkies</item>
+                            </list>
+                        </input>
+                    </layouts>
                 </inputs>
             </idm>
         </component>
