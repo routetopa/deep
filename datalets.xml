@@ -747,7 +747,7 @@
         </component>
 
         <!--treemap-->
-        <component>
+        <!--<component>
             <name>treemap-datalet</name>
             <type>treemap</type>
             <idm>
@@ -760,7 +760,7 @@
                     </input>
                 </inputs>
             </idm>
-        </component>
+        </component>-->
 
         <!--timeline-->
         <component>
