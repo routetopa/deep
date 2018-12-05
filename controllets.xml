@@ -44,6 +44,9 @@
         <component>
             <name>splod-visualization-controllet</name>
         </component>
+        <component>
+            <name>splod-modification-controllet</name>
+        </component>
 
     </components>
 </handler_configuration>
