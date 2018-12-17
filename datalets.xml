@@ -1410,40 +1410,6 @@
             </idm>
         </component>
 
-
-
-        <!--preview link HIDDEN-->
-        <!--<component>-->
-            <!--<name>preview-link</name>-->
-            <!--<type>hidden</type>-->
-            <!--<idm>-->
-                <!--<inputs>-->
-                    <!--<input>-->
-                        <!--<name></name>-->
-                        <!--<description></description>-->
-                        <!--<type></type>-->
-                        <!--<selection></selection>-->
-                    <!--</input>-->
-                <!--</inputs>-->
-            <!--</idm>-->
-        <!--</component>-->
-
-        <!-- preview datalet HIDDEN -->
-        <!--<component>-->
-            <!--<name>preview-datalet</name>-->
-            <!--<type>hidden</type>-->
-            <!--<idm>-->
-                <!--<inputs>-->
-                    <!--<input>-->
-                        <!--<name></name>-->
-                        <!--<description></description>-->
-                        <!--<type></type>-->
-                        <!--<selection></selection>-->
-                    <!--</input>-->
-                <!--</inputs>-->
-            <!--</idm>-->
-        <!--</component>-->
-
         <!-- openlayers-datalet -->
         <!--<component>-->
             <!--<name>openlayers-datalet</name>-->
