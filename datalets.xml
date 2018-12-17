@@ -1324,70 +1324,6 @@
             </idm>
         </component>
 
-        <!--preview link HIDDEN-->
-        <component>
-            <name>preview-link</name>
-            <type>hidden</type>
-            <idm>
-                <inputs>
-                    <input>
-                        <name></name>
-                        <description></description>
-                        <type></type>
-                        <selection></selection>
-                    </input>
-                </inputs>
-            </idm>
-        </component>
-
-        <!-- preview datalet HIDDEN -->
-        <component>
-            <name>preview-datalet</name>
-            <type>hidden</type>
-            <idm>
-                <inputs>
-                    <input>
-                        <name></name>
-                        <description></description>
-                        <type></type>
-                        <selection></selection>
-                    </input>
-                </inputs>
-            </idm>
-        </component>
-
-        <!-- openlayers-datalet -->
-        <component>
-            <name>openlayers-datalet</name>
-            <type>hidden</type>
-            <idm>
-                <inputs>
-                    <input>
-                        <name></name>
-                        <description></description>
-                        <type></type>
-                        <selection></selection>
-                    </input>
-                </inputs>
-            </idm>
-        </component>
-
-        <!-- decision-tree-datalet -->
-        <component>
-            <name>decision-tree-datalet</name>
-            <type>hidden</type>
-            <idm>
-                <inputs>
-                    <input>
-                        <name></name>
-                        <description></description>
-                        <type></type>
-                        <selection></selection>
-                    </input>
-                </inputs>
-            </idm>
-        </component>
-
         <!-- italy map -->
         <component>
             <name>italymap-datalet</name>
@@ -1473,6 +1409,72 @@
                 </inputs>
             </idm>
         </component>
+
+
+
+        <!--preview link HIDDEN-->
+        <!--<component>-->
+            <!--<name>preview-link</name>-->
+            <!--<type>hidden</type>-->
+            <!--<idm>-->
+                <!--<inputs>-->
+                    <!--<input>-->
+                        <!--<name></name>-->
+                        <!--<description></description>-->
+                        <!--<type></type>-->
+                        <!--<selection></selection>-->
+                    <!--</input>-->
+                <!--</inputs>-->
+            <!--</idm>-->
+        <!--</component>-->
+
+        <!-- preview datalet HIDDEN -->
+        <!--<component>-->
+            <!--<name>preview-datalet</name>-->
+            <!--<type>hidden</type>-->
+            <!--<idm>-->
+                <!--<inputs>-->
+                    <!--<input>-->
+                        <!--<name></name>-->
+                        <!--<description></description>-->
+                        <!--<type></type>-->
+                        <!--<selection></selection>-->
+                    <!--</input>-->
+                <!--</inputs>-->
+            <!--</idm>-->
+        <!--</component>-->
+
+        <!-- openlayers-datalet -->
+        <!--<component>-->
+            <!--<name>openlayers-datalet</name>-->
+            <!--<type>hidden</type>-->
+            <!--<idm>-->
+                <!--<inputs>-->
+                    <!--<input>-->
+                        <!--<name></name>-->
+                        <!--<description></description>-->
+                        <!--<type></type>-->
+                        <!--<selection></selection>-->
+                    <!--</input>-->
+                <!--</inputs>-->
+            <!--</idm>-->
+        <!--</component>-->
+
+        <!-- decision-tree-datalet -->
+        <!--<component>-->
+            <!--<name>decision-tree-datalet</name>-->
+            <!--<type>hidden</type>-->
+            <!--<idm>-->
+                <!--<inputs>-->
+                    <!--<input>-->
+                        <!--<name></name>-->
+                        <!--<description></description>-->
+                        <!--<type></type>-->
+                        <!--<selection></selection>-->
+                    <!--</input>-->
+                <!--</inputs>-->
+            <!--</idm>-->
+        <!--</component>-->
 
     </components>
 </handler_configuration>
