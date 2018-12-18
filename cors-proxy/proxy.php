@@ -45,9 +45,7 @@ define('CSAJAX_DEBUG', false);
 /**
  * A set of valid cross domain requests
  */
-$valid_requests = array(
-    'catalogo.beniculturali.it'
-);
+$valid_requests = array();
 
 /**
  * Set extra multiple options for cURL
