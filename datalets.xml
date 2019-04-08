@@ -1308,6 +1308,13 @@
                                 <item>OpenStreetMap</item>
                                 <item>OpenTopoMap</item>
                                 <item>Esri.WorldImagery</item>
+                                <item>Esri.WorldStreetMap</item>
+                                <!--<item>Esri.DeLorme</item>-->
+                                <item>Esri.WorldTopoMap</item>
+                                <item>Esri.OceanBasemap</item>
+                                <item>Esri.NatGeoWorldMap</item>
+                                <item>Esri.WorldGrayCanvas</item>
+                                <item>Stamen.Watercolor</item>
                                 <item>NASAGIBS.ViirsEarthAtNight2012</item>
                             </list>
                         </input>
