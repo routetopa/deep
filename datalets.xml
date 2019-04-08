@@ -1298,6 +1298,20 @@
                         <type>TEXT</type>
                         <selection>?</selection>
                     </input>
+                    <layouts>
+                        <input>
+                            <name>layer</name>
+                            <description>layerDescription</description>
+                            <type>LIST</type>
+                            <selection>1</selection>
+                            <list>
+                                <item>OpenStreetMap</item>
+                                <item>OpenTopoMap</item>
+                                <item>Esri.WorldImagery</item>
+                                <item>NASAGIBS.ViirsEarthAtNight2012</item>
+                            </list>
+                        </input>
+                    </layouts>
                 </inputs>
             </idm>
         </component>
@@ -1320,6 +1334,20 @@
                         <type>TEXT</type>
                         <selection>*</selection>
                     </input>
+                    <layouts>
+                        <input>
+                            <name>layer</name>
+                            <description>layerDescription</description>
+                            <type>LIST</type>
+                            <selection>1</selection>
+                            <list>
+                                <item>OpenStreetMap</item>
+                                <item>OpenTopoMap</item>
+                                <item>Esri.WorldImagery</item>
+                                <item>NASAGIBS.ViirsEarthAtNight2012</item>
+                            </list>
+                        </input>
+                    </layouts>
                 </inputs>
             </idm>
         </component>
