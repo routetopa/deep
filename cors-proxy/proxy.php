@@ -124,7 +124,7 @@ if (CSAJAX_FILTERS) {
             exit;
         }
     } else {
-        $check_url = isset($parsed['scheme']) ? $parsed['scheme'] . '://' : '';
+        $check_url  = isset($parsed['scheme']) ? $parsed['scheme'] . '://' : '';
         $check_url .= isset($parsed['user']) ? $parsed['user'] . ($parsed['pass'] ? ':' . $parsed['pass'] : '') . '@' : '';
         $check_url .= isset($parsed['host']) ? $parsed['host'] : '';
         $check_url .= isset($parsed['port']) ? ':' . $parsed['port'] : '';
@@ -141,7 +141,7 @@ if (CSAJAX_FILTERS) {
 //    $request_url .= '&' . http_build_query($request_params);
 //}
 
-$request_url .= '&' . http_build_query($request_params);
+$request_url .= count($request_params) > 0 ? '&' . http_build_query($request_params) : '';
 
 // let the request begin
 $ch = curl_init($request_url);
@@ -151,43 +151,57 @@ if (CSAJAX_SUPPRESS_EXPECT) {
     array_push($request_headers, 'Expect:'); 
 }
 
-curl_setopt($ch, CURLOPT_HTTPHEADER, $request_headers);   // (re-)send headers
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);     // return response
-curl_setopt($ch, CURLOPT_HEADER, true);       // enabled response headers
+$response_content = null;
+
+//CHECK IF REQUEST IS CSV
+if(endsWith($request_url, ".csv")){
+
+    if(checkDownloadable($request_url)){
+        $response_content = getCSVContent($request_url);
+        header("content-type: text/html");
+        /*print_r(json_encode($response_content));
+        exit*/;
+    }
+}else{
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $request_headers);   // (re-)send headers
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);     // return response
+    curl_setopt($ch, CURLOPT_HEADER, true);       // enabled response headers
 // add data for POST, PUT or DELETE requests
-if ('POST' == $request_method) {
-    $post_data = is_array($request_params) ? http_build_query($request_params) : $request_params;
-    curl_setopt($ch, CURLOPT_POST, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS,  $post_data);
-} elseif ('PUT' == $request_method || 'DELETE' == $request_method) {
-    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $request_method);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $request_params);
-}
+    if ('POST' == $request_method) {
+        $post_data = is_array($request_params) ? http_build_query($request_params) : $request_params;
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS,  $post_data);
+    } elseif ('PUT' == $request_method || 'DELETE' == $request_method) {
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $request_method);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $request_params);
+    }
 
 // Set multiple options for curl according to configuration
-if (is_array($curl_options) && 0 <= count($curl_options)) {
-    curl_setopt_array($ch, $curl_options);
-}
+    if (is_array($curl_options) && 0 <= count($curl_options)) {
+        curl_setopt_array($ch, $curl_options);
+    }
 
 // retrieve response (headers and content)
-$response = curl_exec($ch);
-curl_close($ch);
+    $response = curl_exec($ch);
+    curl_close($ch);
 
 // split response to header and content
-list($response_headers, $response_content) = preg_split('/(\r\n){2}/', $response, 2);
+    list($response_headers, $response_content) = preg_split('/(\r\n){2}/', $response, 2);
 
 // (re-)send the headers
-$response_headers = preg_split('/(\r\n){1}/', $response_headers);
-foreach ($response_headers as $key => $response_header) {
-    // Rewrite the `Location` header, so clients will also use the proxy for redirects.
-    if (preg_match('/^Location:/', $response_header)) {
-        list($header, $value) = preg_split('/: /', $response_header, 2);
-        $response_header = 'Location: ' . $_SERVER['REQUEST_URI'] . '?csurl=' . $value;
-    }
-    if (!preg_match('/^(Transfer-Encoding):/', $response_header)) {
-        header($response_header, false);
+    $response_headers = preg_split('/(\r\n){1}/', $response_headers);
+    foreach ($response_headers as $key => $response_header) {
+        // Rewrite the `Location` header, so clients will also use the proxy for redirects.
+        if (preg_match('/^Location:/', $response_header)) {
+            list($header, $value) = preg_split('/: /', $response_header, 2);
+            $response_header = 'Location: ' . $_SERVER['REQUEST_URI'] . '?csurl=' . $value;
+        }
+        if (!preg_match('/^(Transfer-Encoding):/', $response_header)) {
+            header($response_header, false);
+        }
     }
 }
+
 
 // finally, output the content
 print($response_content);
@@ -197,4 +211,69 @@ function csajax_debug_message($message)
     if (true == CSAJAX_DEBUG) {
         print $message . PHP_EOL;
     }
+}
+
+//CSV Utilities Funcs
+function endsWith($haystack, $needle)
+{
+    $length = strlen($needle);
+    if ($length == 0) {
+        return true;
+    }
+
+    return (substr($haystack, -$length) === $needle);
+}
+
+function getResourcesInfo($url){
+    $resource_info = array();
+    preg_match_all('/[[:alnum:]]{8}-{1}[[:alnum:]]{4}-{1}[[:alnum:]]{4}-{1}[[:alnum:]]{4}-{1}[[:alnum:]]{12}/', $url, $resource_info);
+    $string_to_search = '/' . $resource_info[0][0] . '/resource/' . $resource_info[0][1] . '/download';
+    $resource_url = str_replace($string_to_search, '', $url);
+    $resource_url = str_replace('.csv', '', $resource_url);
+    array_push($resource_info[0], $resource_url);
+    return $resource_info[0];
+}
+
+function checkDownloadable($url)
+{
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_NOBODY, 1);
+    curl_setopt($ch, CURLOPT_FAILONERROR, 1);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    if (curl_exec($ch) !== FALSE) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function getCSVContent($url){
+    $data = file_get_contents($url);
+    $rows = explode("\n",$data);
+    $rows[0] = preg_replace('/[\x00-\x1F\x80-\xFF]/', '', $rows[0]);
+    $headers = explode(";",$rows[0]);
+    array_shift($rows);
+    $records = array();
+    foreach($rows as $row) {
+        $values = explode(";",$row);
+        $record = new stdClass();
+        for($i=0; $i < count($headers); $i++){
+            $headers[$i] = trim($headers[$i], '""');
+            $values[$i]  = trim($values[$i], '""');
+            $record->$headers[$i] = $values[$i];
+        }
+        array_push($records, $record);
+    }
+
+    $resource_info = getResourcesInfo($url);
+
+    $result = new stdClass();
+    $result->success = true;
+    $result->resource_url = $resource_info[2];
+    $result->result  = new stdClass();
+    $result->result->resource_id = $resource_info[1];
+    $result->result->records     = $records;
+
+    return json_encode($result);
 }
