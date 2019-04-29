@@ -1093,22 +1093,6 @@
             </idm>
         </component>
 
-        <!--treemap-->
-        <!--<component>
-            <name>treemap-datalet</name>
-            <type>treemap</type>
-            <idm>
-                <inputs>
-                    <input>
-                        <name>Level</name>
-                        <description>LevelDescription</description>
-                        <type>TEXT</type>
-                        <selection>*</selection>
-                    </input>
-                </inputs>
-            </idm>
-        </component>-->
-
         <!--timeline-->
         <component>
             <name>timeline-datalet</name>
@@ -1309,7 +1293,7 @@
                                 <item>OpenTopoMap</item>
                                 <item>Esri.WorldImagery</item>
                                 <item>Esri.WorldStreetMap</item>
-                                <!--<item>Esri.DeLorme</item>-->
+                                <item>Esri.DeLorme</item>
                                 <item>Esri.WorldTopoMap</item>
                                 <item>Esri.OceanBasemap</item>
                                 <item>Esri.NatGeoWorldMap</item>
@@ -1375,7 +1359,13 @@
                         <name>Value</name>
                         <description>ValueDescription</description>
                         <type>NUMBER</type>
-                        <selection>1</selection>
+                        <selection>?</selection>
+                    </input>
+                    <input>
+                        <name>Categories</name>
+                        <description>CategoriesDescription</description>
+                        <type>TEXT</type>
+                        <selection>?</selection>
                     </input>
                     <input>
                         <name>TooltipContent</name>
@@ -1444,38 +1434,6 @@
                 </inputs>
             </idm>
         </component>
-
-        <!-- openlayers-datalet -->
-        <!--<component>-->
-            <!--<name>openlayers-datalet</name>-->
-            <!--<type>hidden</type>-->
-            <!--<idm>-->
-                <!--<inputs>-->
-                    <!--<input>-->
-                        <!--<name></name>-->
-                        <!--<description></description>-->
-                        <!--<type></type>-->
-                        <!--<selection></selection>-->
-                    <!--</input>-->
-                <!--</inputs>-->
-            <!--</idm>-->
-        <!--</component>-->
-
-        <!-- decision-tree-datalet -->
-        <!--<component>-->
-            <!--<name>decision-tree-datalet</name>-->
-            <!--<type>hidden</type>-->
-            <!--<idm>-->
-                <!--<inputs>-->
-                    <!--<input>-->
-                        <!--<name></name>-->
-                        <!--<description></description>-->
-                        <!--<type></type>-->
-                        <!--<selection></selection>-->
-                    <!--</input>-->
-                <!--</inputs>-->
-            <!--</idm>-->
-        <!--</component>-->
 
     </components>
 </handler_configuration>
