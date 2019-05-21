@@ -156,7 +156,7 @@ $response_content = null;
 //CHECK IF REQUEST IS CSV
 if(endsWith($request_url, ".csv")){
 
-    if(checkDownloadable($request_url)){
+    if(1 || checkDownloadable($request_url)){
         $response_content = getCSVContent($request_url);
         header("content-type: text/html");
         /*print_r(json_encode($response_content));
