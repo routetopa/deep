@@ -1219,6 +1219,7 @@
         </component>
 
         <!--audioslider-->
+        <!--
         <component>
             <name>audioslider-datalet</name>
             <type>audioslider</type>
@@ -1251,6 +1252,7 @@
                 </inputs>
             </idm>
         </component>
+        -->
 
         <!--map-->
         <component>
