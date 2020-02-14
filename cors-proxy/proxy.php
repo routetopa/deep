@@ -249,14 +249,19 @@ function checkDownloadable($url)
 }
 
 function getCSVContent($url){
+    $delimiter = ";";
     $data = file_get_contents($url);
     $rows = explode("\n",$data);
     $rows[0] = preg_replace('/[\x00-\x1F\x80-\xFF]/', '', $rows[0]);
-    $headers = explode(";",$rows[0]);
+    $headers = explode($delimiter, $rows[0]);
+    if(count($headers) == 1 ){
+        $delimiter = ",";
+        $headers = explode($delimiter, $rows[0]);
+    }
     array_shift($rows);
     $records = array();
     foreach($rows as $row) {
-        $values = explode(";",$row);
+        $values = explode($delimiter,$row);
         $record = new stdClass();
         for($i=0; $i < count($headers); $i++){
             $headers[$i] = trim($headers[$i], '""');
