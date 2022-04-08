@@ -1471,43 +1471,43 @@
                         <name>LOGTIMELINEMediaUrl</name>
                         <description>url of video/image (optional)</description>
                         <type>TEXT</type>
-                        <selection>1</selection>
+                        <selection>?</selection>
                     </input>
                     <input>
                         <name>LOGTIMELINEBackground</name>
                         <description>url of background image (optional)</description>
                         <type>TEXT</type>
-                        <selection>1</selection>
+                        <selection>?</selection>
                     </input>
                     <input>
                         <name>LOGTIMELINEStartTime</name>
                         <description>start time of the event (optional)</description>
                         <type>TEXT</type>
-                        <selection>1</selection>
+                        <selection>?</selection>
                     </input>
                     <input>
                         <name>LOGTIMELINEFinishTime</name>
                         <description>end time of the event (optional)</description>
                         <type>TEXT</type>
-                        <selection>1</selection>
+                        <selection>?</selection>
                     </input>
                     <input>
                         <name>LOGTIMELINEEvent-info1</name>
                         <description>event info 1 (optional)</description>
                         <type>TEXT</type>
-                        <selection>1</selection>
+                        <selection>?</selection>
                     </input>
                     <input>
                         <name>LOGTIMELINEEvent-info2</name>
                         <description>event info 2 (optional)</description>
                         <type>TEXT</type>
-                        <selection>1</selection>
+                        <selection>?</selection>
                     </input>
                     <input>
                         <name>LOGTIMELINEEvent-info3</name>
                         <description>event info 3 (optional)</description>
                         <type>TEXT</type>
-                        <selection>1</selection>
+                        <selection>?</selection>
                     </input>
                 </inputs>
             </idm>
