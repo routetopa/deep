@@ -1438,73 +1438,74 @@
         </component>
 
         <!--Logtimeline-->
+        <!--Logtimeline-->
         <component>
             <name>logtimeline-datalet</name>
             <type>logtimeline</type>
             <idm>
                 <inputs>
                     <input>
-                        <name>LOGTIMELINEStartDate</name>
+                        <name>StartDate</name>
                         <description>start date of the event</description>
                         <type>TEXT</type>
                         <selection>1</selection>
                     </input>
                     <input>
-                        <name>LOGTIMELINEEndDate</name>
+                        <name>EndDate</name>
                         <description>end date of the event</description>
                         <type>TEXT</type>
                         <selection>1</selection>
                     </input>
                     <input>
-                        <name>LOGTIMELINEEventTitle</name>
+                        <name>EventTitle</name>
                         <description>name of the event</description>
                         <type>TEXT</type>
                         <selection>1</selection>
                     </input>
                     <input>
-                        <name>LOGTIMELINEEventDescription</name>
+                        <name>EventDescription</name>
                         <description>description of the event</description>
                         <type>TEXT</type>
                         <selection>1</selection>
                     </input>
                     <input>
-                        <name>LOGTIMELINEMediaUrl</name>
+                        <name>MediaUrl</name>
                         <description>url of video/image (optional)</description>
                         <type>TEXT</type>
                         <selection>?</selection>
                     </input>
                     <input>
-                        <name>LOGTIMELINEBackground</name>
+                        <name>Background</name>
                         <description>url of background image (optional)</description>
                         <type>TEXT</type>
                         <selection>?</selection>
                     </input>
                     <input>
-                        <name>LOGTIMELINEStartTime</name>
+                        <name>StartTime</name>
                         <description>start time of the event (optional)</description>
                         <type>TEXT</type>
                         <selection>?</selection>
                     </input>
                     <input>
-                        <name>LOGTIMELINEFinishTime</name>
+                        <name>FinishTime</name>
                         <description>end time of the event (optional)</description>
                         <type>TEXT</type>
                         <selection>?</selection>
                     </input>
                     <input>
-                        <name>LOGTIMELINEEvent-info1</name>
+                        <name>Event-info1</name>
                         <description>event info 1 (optional)</description>
                         <type>TEXT</type>
                         <selection>?</selection>
                     </input>
                     <input>
-                        <name>LOGTIMELINEEvent-info2</name>
+                        <name>Event-info2</name>
                         <description>event info 2 (optional)</description>
                         <type>TEXT</type>
                         <selection>?</selection>
                     </input>
                     <input>
-                        <name>LOGTIMELINEEvent-info3</name>
+                        <name>Event-info3</name>
                         <description>event info 3 (optional)</description>
                         <type>TEXT</type>
                         <selection>?</selection>
