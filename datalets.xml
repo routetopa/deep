@@ -1438,78 +1438,150 @@
         </component>
 
         <!--Logtimeline-->
-        <!--Logtimeline-->
         <component>
             <name>logtimeline-datalet</name>
             <type>logtimeline</type>
             <idm>
                 <inputs>
                     <input>
-                        <name>StartDate</name>
-                        <description>start date of the event</description>
+                        <name>LOGTIMELINEStartDate</name>
+                        <description>LOGTIMELINEStartDateDescription</description>
                         <type>TEXT</type>
                         <selection>1</selection>
                     </input>
                     <input>
-                        <name>EndDate</name>
-                        <description>end date of the event</description>
+                        <name>LOGTIMELINEEndDate</name>
+                        <description>LOGTIMELINEEndDateDescription</description>
                         <type>TEXT</type>
                         <selection>1</selection>
                     </input>
                     <input>
-                        <name>EventTitle</name>
-                        <description>name of the event</description>
+                        <name>LOGTIMELINEEventTitle</name>
+                        <description>LOGTIMELINEEventTitleDescription</description>
                         <type>TEXT</type>
                         <selection>1</selection>
                     </input>
                     <input>
-                        <name>EventDescription</name>
-                        <description>description of the event</description>
+                        <name>LOGTIMELINEEventDescription</name>
+                        <description>LOGTIMELINEEventDescriptionDescription</description>
                         <type>TEXT</type>
                         <selection>1</selection>
                     </input>
                     <input>
-                        <name>MediaUrl</name>
-                        <description>url of video/image (optional)</description>
+                        <name>LOGTIMELINEMediaUrl</name>
+                        <description>LOGTIMELINEMediaUrlDescription</description>
                         <type>TEXT</type>
                         <selection>?</selection>
                     </input>
                     <input>
-                        <name>Background</name>
-                        <description>url of background image (optional)</description>
+                        <name>LOGTIMELINEBackground</name>
+                        <description>LOGTIMELINEBackgroundDescription</description>
                         <type>TEXT</type>
                         <selection>?</selection>
                     </input>
                     <input>
-                        <name>StartTime</name>
-                        <description>start time of the event (optional)</description>
+                        <name>LOGTIMELINEStartTime</name>
+                        <description>LOGTIMELINEStartTimeDescription</description>
                         <type>TEXT</type>
                         <selection>?</selection>
                     </input>
                     <input>
-                        <name>FinishTime</name>
-                        <description>end time of the event (optional)</description>
+                        <name>LOGTIMELINEFinishTime</name>
+                        <description>LOGTIMELINEFinishTimeDescription</description>
                         <type>TEXT</type>
                         <selection>?</selection>
                     </input>
                     <input>
-                        <name>Event-info1</name>
-                        <description>event info 1 (optional)</description>
+                        <name>LOGTIMELINEEventInfo1</name>
+                        <description>LOGTIMELINEEventInfo1Description</description>
                         <type>TEXT</type>
                         <selection>?</selection>
                     </input>
                     <input>
-                        <name>Event-info2</name>
-                        <description>event info 2 (optional)</description>
+                        <name>LOGTIMELINEEventInfo2</name>
+                        <description>LOGTIMELINEEventInfo2Description</description>
                         <type>TEXT</type>
                         <selection>?</selection>
                     </input>
                     <input>
-                        <name>Event-info3</name>
-                        <description>event info 3 (optional)</description>
+                        <name>LOGTIMELINEEventInfo3</name>
+                        <description>LOGTIMELINEEventInfo3Description</description>
                         <type>TEXT</type>
                         <selection>?</selection>
                     </input>
+                    <input>
+                        <name>LOGTIMELINELink</name>
+                        <description>LOGTIMELINELinkDescription</description>
+                        <type>TEXT</type>
+                        <selection>?</selection>
+                    </input>
+                    <layouts>
+                        <input>
+                            <name>date-reading</name>
+                            <description>date-readingDescription</description>
+                            <type>LIST</type>
+                            <selection>1</selection>
+                            <list>
+                                <item>Std</item>
+                                <item>Alt</item>
+                            </list>
+                        </input>
+                        <input>
+                            <name>timenav-position</name>
+                            <description>timenav-positionDescription</description>
+                            <type>LIST</type>
+                            <selection>1</selection>
+                            <list>
+                                <item>Bottom</item>
+                                <item>Top</item>
+                            </list>
+                        </input>
+                        <input>
+                            <name>lang-timeline</name>
+                            <description>lang-timelineDescription</description>
+                            <type>LIST</type>
+                            <selection>1</selection>
+                            <list>
+                                <item>en</item>
+                                <item>it</item>
+                                <item>fr</item>
+                                <item>de</item>
+                                <item>es</item>
+                                <item>cn</item>
+                                <item>ja</item>
+                            </list>
+                        </input>
+                        <input>
+                            <name>slides-order</name>
+                            <description>slides-orderDescription</description>
+                            <type>LIST</type>
+                            <selection>?</selection>
+                            <list>
+                                <item>start</item>
+                                <item>end</item>
+                            </list>
+                        </input>
+                        <input>
+                            <name>LOGTIMELINETheme</name>
+                            <description>LOGTIMELINEThemeDescription</description>
+                            <type>LIST</type>
+                            <selection>?</selection>
+                            <list>
+                                <item>light</item>
+                                <item>dark</item>
+                            </list>
+                        </input>
+                        <input>
+                            <name>hash_bookmark</name>
+                            <description>hash_bookmarkDescription</description>
+                            <type>LIST</type>
+                            <selection>?</selection>
+                            <list>
+                                <item>off</item>
+                                <item>on</item>
+                            </list>
+                        </input>
+                    </layouts>
                 </inputs>
             </idm>
         </component>
